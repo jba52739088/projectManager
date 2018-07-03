@@ -73,8 +73,8 @@ class eventModel: NSObject {
         
         
         let dfmatter = DateFormatter()
-        dfmatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
-        let date = dfmatter.date(from: self.startDate + " " + self.startTime)
+        dfmatter.dateFormat = "yyyy-MM-dd HH:mm"
+        let date = dfmatter.date(from: self.startDate + " " + self.startTime.components(separatedBy: ":")[0] + ":" + self.startTime.components(separatedBy: ":")[1])
         let dateStamp:TimeInterval = date!.timeIntervalSince1970
         self.timestamp = "\(dateStamp)"
 //        print("self.timestamp: \(self.timestamp)")

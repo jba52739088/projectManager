@@ -31,6 +31,9 @@
 		FCC90ABF20BCBB0300D92219 /* newsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC90ABE20BCBB0300D92219 /* newsCell.swift */; };
 		FCC90AC220BCC16900D92219 /* projectCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC90AC120BCC16900D92219 /* projectCell.swift */; };
 		FCC90AC420BCC53400D92219 /* feeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC90AC320BCC53400D92219 /* feeCell.swift */; };
+		FCD3837720EBC68E00568B96 /* scheduleAddVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD3837620EBC68E00568B96 /* scheduleAddVC.swift */; };
+		FCD3837920EBC78900568B96 /* projectModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD3837820EBC78900568B96 /* projectModel.swift */; };
+		FCD3837B20EC0CBD00568B96 /* matchedMemberModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD3837A20EC0CBD00568B96 /* matchedMemberModel.swift */; };
 		FCD53A8620BF106F00E92D91 /* scheduleDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD53A8520BF106F00E92D91 /* scheduleDetailVC.swift */; };
 		FCD53A8920BF10E000E92D91 /* scheduleTitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD53A8820BF10E000E92D91 /* scheduleTitleCell.swift */; };
 		FCD53A8B20BF10F800E92D91 /* scheduleLocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD53A8A20BF10F800E92D91 /* scheduleLocationCell.swift */; };
@@ -67,6 +70,9 @@
 		FCC90ABE20BCBB0300D92219 /* newsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newsCell.swift; sourceTree = "<group>"; };
 		FCC90AC120BCC16900D92219 /* projectCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = projectCell.swift; sourceTree = "<group>"; };
 		FCC90AC320BCC53400D92219 /* feeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = feeCell.swift; sourceTree = "<group>"; };
+		FCD3837620EBC68E00568B96 /* scheduleAddVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = scheduleAddVC.swift; sourceTree = "<group>"; };
+		FCD3837820EBC78900568B96 /* projectModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = projectModel.swift; sourceTree = "<group>"; };
+		FCD3837A20EC0CBD00568B96 /* matchedMemberModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = matchedMemberModel.swift; sourceTree = "<group>"; };
 		FCD53A8520BF106F00E92D91 /* scheduleDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = scheduleDetailVC.swift; sourceTree = "<group>"; };
 		FCD53A8820BF10E000E92D91 /* scheduleTitleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = scheduleTitleCell.swift; sourceTree = "<group>"; };
 		FCD53A8A20BF10F800E92D91 /* scheduleLocationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = scheduleLocationCell.swift; sourceTree = "<group>"; };
@@ -131,7 +137,9 @@
 				FC2E50F820D4E45D0070B591 /* tabBarController.swift */,
 				FC3807DA20BC5A65004B554A /* loginVC.swift */,
 				FCC90AB020BC606D00D92219 /* registerVC.swift */,
+				FCD3837820EBC78900568B96 /* projectModel.swift */,
 				FC2E50FA20D4F82F0070B591 /* eventModel.swift */,
+				FCD3837A20EC0CBD00568B96 /* matchedMemberModel.swift */,
 				FCD53A8720BF107700E92D91 /* calendar */,
 				FCC90AC020BCBB0B00D92219 /* messageVC */,
 				FCC90AB620BC643F00D92219 /* projectVC.swift */,
@@ -152,6 +160,7 @@
 				FCC90AB420BC642A00D92219 /* messageVC.swift */,
 				FCC90ABC20BCBAF200D92219 /* msgCell.swift */,
 				FCC90ABE20BCBB0300D92219 /* newsCell.swift */,
+				FC250B2020DF85BE00B664D0 /* scheduleEditVC.swift */,
 			);
 			path = messageVC;
 			sourceTree = "<group>";
@@ -161,7 +170,7 @@
 			children = (
 				FCC90AB220BC641400D92219 /* calendarVC.swift */,
 				FCD53A8520BF106F00E92D91 /* scheduleDetailVC.swift */,
-				FC250B2020DF85BE00B664D0 /* scheduleEditVC.swift */,
+				FCD3837620EBC68E00568B96 /* scheduleAddVC.swift */,
 				FCD53A9020BF116C00E92D91 /* cell */,
 			);
 			path = calendar;
@@ -322,6 +331,7 @@
 				FCD53A8D20BF112200E92D91 /* scheduleType_1Cell.swift in Sources */,
 				FC250B2120DF85BE00B664D0 /* scheduleEditVC.swift in Sources */,
 				FCC90AB520BC642A00D92219 /* messageVC.swift in Sources */,
+				FCD3837920EBC78900568B96 /* projectModel.swift in Sources */,
 				FCC90ABD20BCBAF200D92219 /* msgCell.swift in Sources */,
 				FC785FCC20BF5E690000EB8E /* calendarCell.swift in Sources */,
 				FC250B1F20DE4F9F00B664D0 /* scheduleEditlCell.swift in Sources */,
@@ -329,6 +339,7 @@
 				FCD53A8F20BF112E00E92D91 /* scheduleType_2Cell.swift in Sources */,
 				FC55E85720C3D574006CC1FC /* calendarCollectionCell.swift in Sources */,
 				FC3807DB20BC5A65004B554A /* loginVC.swift in Sources */,
+				FCD3837720EBC68E00568B96 /* scheduleAddVC.swift in Sources */,
 				FCC90AB720BC643F00D92219 /* projectVC.swift in Sources */,
 				FCB3471A20BC55FA000FD864 /* AppDelegate.swift in Sources */,
 				FCC90AB920BC644E00D92219 /* feeVC.swift in Sources */,
@@ -338,6 +349,7 @@
 				FCC90AC420BCC53400D92219 /* feeCell.swift in Sources */,
 				FCC90ABB20BC645F00D92219 /* otherVC.swift in Sources */,
 				FCC90AC220BCC16900D92219 /* projectCell.swift in Sources */,
+				FCD3837B20EC0CBD00568B96 /* matchedMemberModel.swift in Sources */,
 				FCD53A8920BF10E000E92D91 /* scheduleTitleCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

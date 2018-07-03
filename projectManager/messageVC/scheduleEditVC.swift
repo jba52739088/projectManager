@@ -15,11 +15,13 @@ class scheduleEditVC: UIViewController {
     @IBOutlet weak var confirmBtn: UIBarButtonItem!
     @IBOutlet weak var cancelBtn: UIBarButtonItem!
     
+    let timePicker = UIDatePicker()
+    
     var event: eventModel?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         let footView = UIView()
         footView.backgroundColor = UIColor.lightGray
         self.tableView.tableFooterView = footView
@@ -32,13 +34,35 @@ class scheduleEditVC: UIViewController {
         
         self.tableView.reloadData()
     }
-
+    
     @IBAction func doConfirm(_ sender: Any) {
         
     }
     
     @IBAction func doCancel(_ sender: Any) {
         
+    }
+    
+    func openTimePicker()  {
+        let vc = UIViewController()
+        vc.preferredContentSize = CGSize(width: 250,height: 300)
+        timePicker.datePickerMode = UIDatePickerMode.dateAndTime
+        timePicker.frame = CGRect(x: 0, y: 0, width: 250, height: 300)
+        timePicker.backgroundColor = UIColor.white
+//        timePicker.addTarget(self, action: #selector(self.startTimeDiveChanged), for: UIControlEvents.valueChanged)
+        vc.view.addSubview(timePicker)
+        let editRadiusAlert = UIAlertController(title: "選擇日期", message: "", preferredStyle: UIAlertControllerStyle.alert)
+        editRadiusAlert.setValue(vc, forKey: "contentViewController")
+        editRadiusAlert.addAction(UIAlertAction(title: "確定", style: .default, handler: nil))
+        editRadiusAlert.addAction(UIAlertAction(title: "取消", style: .cancel, handler: nil))
+        self.present(editRadiusAlert, animated: true)
+    }
+    
+    @objc func startTimeDiveChanged(sender: UIDatePicker) {
+        let formatter = DateFormatter()
+        formatter.timeStyle = .short
+        print(formatter.string(from: sender.date))
+        timePicker.removeFromSuperview() // if you want to remove time picker
     }
 }
 
@@ -163,7 +187,7 @@ extension scheduleEditVC: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-
+        
         return self.tableView.frame.height * 1 / 15
     }
     
@@ -190,5 +214,35 @@ extension scheduleEditVC: UITableViewDelegate, UITableViewDataSource {
         default:
             return 1
         }
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        switch indexPath.section {
+        case 0:
+            return
+        case 1:
+            return
+        case 2:
+            self.openTimePicker()
+            return
+        case 3:
+            //
+            return
+        case 4:
+            self.projectClassRequest({ (_classes) in
+                //
+            })
+        case 5:
+            return
+        case 6:
+            return
+        case 7:
+            return
+        case 8:
+            return
+        default:
+            return
+        }
+    }
 }
-}
+

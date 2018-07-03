@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "projectManager/calendar/calendarVC.swift"
-            timestampString = "551436084.94721"
+            timestampString = "552348067.910888"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "184"
-            endingLineNumber = "184"
+            startingLineNumber = "187"
+            endingLineNumber = "187"
             landmarkName = "respondToSwipeGesture(gesture:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "projectManager/calendar/calendarVC.swift"
-            timestampString = "551436084.9476891"
+            timestampString = "552348067.910973"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "126"
-            endingLineNumber = "126"
+            startingLineNumber = "129"
+            endingLineNumber = "129"
             landmarkName = "queryEvents()"
             landmarkType = "7">
          </BreakpointContent>
@@ -38,81 +38,49 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "projectManager/calendar/calendarVC.swift"
-            timestampString = "551436084.948009"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "170"
-            endingLineNumber = "170"
-            landmarkName = "sortEvents()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "projectManager/calendar/calendarVC.swift"
-            timestampString = "551436084.948401"
+            filePath = "projectManager/calendar/scheduleEditVC.swift"
+            timestampString = "552320674.298198"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "153"
-            endingLineNumber = "153"
-            landmarkName = "sortEvents()"
+            startingLineNumber = "233"
+            endingLineNumber = "233"
+            landmarkName = "tableView(_:didSelectRowAt:)"
             landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "projectManager/calendar/calendarVC.swift"
-            timestampString = "551436084.949047"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "159"
-            endingLineNumber = "159"
-            landmarkName = "sortEvents()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "projectManager/calendar/calendarVC.swift"
-            timestampString = "551436084.949558"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "164"
-            endingLineNumber = "164"
-            landmarkName = "sortEvents()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "projectManager/calendar/calendarVC.swift"
-            timestampString = "551436084.949993"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "155"
-            endingLineNumber = "155"
-            landmarkName = "sortEvents()"
-            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "projectManager.scheduleEditVC.tableView(__ObjC.UITableView, didSelectRowAt: Foundation.IndexPath) -&gt; ()"
+                  moduleName = "projectManager"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/HuangEnYu/Documents/IOS_Project/%E5%B0%88%E6%A1%88%E7%AE%A1%E7%90%86/projectManager/projectManager/calendar/scheduleEditVC.swift"
+                  timestampString = "552320674.477168"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "234"
+                  endingLineNumber = "234"
+                  offsetFromSymbolStart = "264">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Array&lt;Swift.Dictionary&lt;Swift.String, Swift.String&gt;&gt;&gt;) -&gt; () in projectManager.scheduleEditVC.tableView(__ObjC.UITableView, didSelectRowAt: Foundation.IndexPath) -&gt; ()"
+                  moduleName = "projectManager"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/HuangEnYu/Documents/IOS_Project/%E5%B0%88%E6%A1%88%E7%AE%A1%E7%90%86/projectManager/projectManager/calendar/scheduleEditVC.swift"
+                  timestampString = "552320674.4794329"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "234"
+                  endingLineNumber = "234"
+                  offsetFromSymbolStart = "16">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -121,29 +89,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "projectManager/calendar/calendarVC.swift"
-            timestampString = "551436084.950411"
+            filePath = "projectManager/apiMananger.swift"
+            timestampString = "552348067.9110661"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "161"
-            endingLineNumber = "161"
-            landmarkName = "sortEvents()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "projectManager/calendar/calendarVC.swift"
-            timestampString = "551436084.950814"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "166"
-            endingLineNumber = "166"
-            landmarkName = "sortEvents()"
+            startingLineNumber = "182"
+            endingLineNumber = "182"
+            landmarkName = "insertCalendarRequest(event:_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -154,12 +106,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "projectManager/apiMananger.swift"
-            timestampString = "551521561.307501"
+            timestampString = "552348067.9111511"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "67"
-            endingLineNumber = "67"
-            landmarkName = "registerRequest(account:password:name:ID:address:phone:cellphone:mail:_:)"
+            startingLineNumber = "186"
+            endingLineNumber = "186"
+            landmarkName = "insertCalendarRequest(event:_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

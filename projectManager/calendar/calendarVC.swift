@@ -92,6 +92,9 @@ class calendarVC: UIViewController {
     }
     
     @IBAction func tapAddBtn(_ sender: Any) {
+        if let scheduleAddVC = self.storyboard?.instantiateViewController(withIdentifier: "scheduleAddVC") as? scheduleAddVC {
+            self.navigationController?.pushViewController(scheduleAddVC, animated: true)
+        }
     }
     
     func setNavBar() {
