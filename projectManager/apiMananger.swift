@@ -118,6 +118,7 @@ extension UIViewController {
     }
 
     // 取得邀請對象
+    // 取得已加入商家
     func matchedMemberRequest(_ completionHandler: @escaping ([MatchedMember]?) -> Void) {
         var allmatchedMembers: [MatchedMember] = []
         guard let token = appDelegate.token else { return }
@@ -184,6 +185,30 @@ extension UIViewController {
                         let msg = JSON["msg"] as? String{
                         if result {
                             completionHandler(true, "")
+                        }else {
+                            completionHandler(false, msg)
+                        }
+                    }
+                }else {
+                    print("registerRequest: get JSON error")
+                }
+        }
+    }
+    
+    // 新增商家, 進行掃描, 取得字串之後
+    func insertMatchedMemberRequest(invite_id: String, _ completionHandler: @escaping (Bool, String) -> Void){
+        guard let token = appDelegate.token else { return }
+        let headers = ["Authorization": "Bearer \(token)"]
+        let parameters = ["invite_id":invite_id]
+        
+        Alamofire.request("http://edu.iscom.com.tw:2039/API/api/lawyer_WebAPI/SendMatchRequest", method: .post, parameters: parameters, encoding: JSONEncoding.default, headers: headers)
+            .responseJSON { response in
+                if let JSON = response.result.value as? [String:AnyObject] {
+                    if let result = JSON["result"] as? Bool,
+                        let msg = JSON["msg"] as? String,
+                        let M_NAME = JSON["M_NAME"] as? String{
+                        if result {
+                            completionHandler(true, M_NAME)
                         }else {
                             completionHandler(false, msg)
                         }

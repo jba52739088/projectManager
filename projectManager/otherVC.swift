@@ -9,6 +9,12 @@
 import UIKit
 
 class otherVC: UIViewController {
+    
+    @IBOutlet weak var msgBtn: UIButton!
+    @IBOutlet weak var scanBtn: UIButton!
+    @IBOutlet weak var topupBtn: UIButton!
+    @IBOutlet weak var willBtn: UIButton!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,20 +23,15 @@ class otherVC: UIViewController {
         self.navigationController?.title = "其他功能"
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func tapMessageBtn(_ sender: Any) {
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func tapScanBtn(_ sender: Any) {
     }
-    */
-
+    
+    @IBAction func tapTopupBtn(_ sender: Any) {
+    }
+    
+    @IBAction func tapWillBtn(_ sender: Any) {
+    }
 }
