@@ -8,21 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		8580D8962EC231E1683C8514 /* Pods_projectManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 451906413D794DBB56F2E766 /* Pods_projectManager.framework */; };
-		FC250B1F20DE4F9F00B664D0 /* scheduleEditlCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC250B1E20DE4F9F00B664D0 /* scheduleEditlCell.swift */; };
 		FC250B2120DF85BE00B664D0 /* scheduleEditVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC250B2020DF85BE00B664D0 /* scheduleEditVC.swift */; };
 		FC2E50F720D4DB740070B591 /* apiMananger.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2E50F620D4DB740070B591 /* apiMananger.swift */; };
 		FC2E50F920D4E45D0070B591 /* tabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2E50F820D4E45D0070B591 /* tabBarController.swift */; };
-		FC2E50FB20D4F82F0070B591 /* eventModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2E50FA20D4F82F0070B591 /* eventModel.swift */; };
 		FC3807DB20BC5A65004B554A /* loginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3807DA20BC5A65004B554A /* loginVC.swift */; };
-		FC55E85720C3D574006CC1FC /* calendarCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC55E85620C3D574006CC1FC /* calendarCollectionCell.swift */; };
-		FC785FCC20BF5E690000EB8E /* calendarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC785FCB20BF5E690000EB8E /* calendarCell.swift */; };
+		FC4F138D20FC08D00009D2FB /* projectModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4F138A20FC08B80009D2FB /* projectModel.swift */; };
+		FC4F138E20FC08D20009D2FB /* eventModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4F138B20FC08B80009D2FB /* eventModel.swift */; };
+		FC4F138F20FC08D50009D2FB /* matchedMemberModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4F138C20FC08B80009D2FB /* matchedMemberModel.swift */; };
+		FC4F139020FC08D80009D2FB /* scheduleAddVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4F137C20FC08580009D2FB /* scheduleAddVC.swift */; };
+		FC4F139120FC08DB0009D2FB /* searchCalendarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4F137D20FC08580009D2FB /* searchCalendarVC.swift */; };
+		FC4F139220FC08DD0009D2FB /* calendarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4F137E20FC08580009D2FB /* calendarVC.swift */; };
+		FC4F139320FC08E30009D2FB /* scheduleConflictVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4F138720FC08580009D2FB /* scheduleConflictVC.swift */; };
+		FC4F139420FC08E60009D2FB /* scheduleDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4F138820FC08580009D2FB /* scheduleDetailVC.swift */; };
+		FC4F139520FC08EA0009D2FB /* scheduleTitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4F138020FC08580009D2FB /* scheduleTitleCell.swift */; };
+		FC4F139620FC08EE0009D2FB /* scheduleType_2Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4F138120FC08580009D2FB /* scheduleType_2Cell.swift */; };
+		FC4F139720FC08EE0009D2FB /* scheduleLocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4F138220FC08580009D2FB /* scheduleLocationCell.swift */; };
+		FC4F139820FC08EE0009D2FB /* calendarCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4F138320FC08580009D2FB /* calendarCollectionCell.swift */; };
+		FC4F139920FC08EE0009D2FB /* scheduleType_1Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4F138420FC08580009D2FB /* scheduleType_1Cell.swift */; };
+		FC4F139A20FC08EE0009D2FB /* calendarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4F138520FC08580009D2FB /* calendarCell.swift */; };
+		FC4F139B20FC08EE0009D2FB /* scheduleEditlCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4F138620FC08580009D2FB /* scheduleEditlCell.swift */; };
+		FC4F139D210439900009D2FB /* shopCalendarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4F139C210439900009D2FB /* shopCalendarVC.swift */; };
 		FCB3471A20BC55FA000FD864 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB3471920BC55FA000FD864 /* AppDelegate.swift */; };
 		FCB3471C20BC55FA000FD864 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB3471B20BC55FA000FD864 /* ViewController.swift */; };
 		FCB3471F20BC55FA000FD864 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCB3471D20BC55FA000FD864 /* Main.storyboard */; };
 		FCB3472120BC55FA000FD864 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCB3472020BC55FA000FD864 /* Assets.xcassets */; };
 		FCB3472420BC55FA000FD864 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCB3472220BC55FA000FD864 /* LaunchScreen.storyboard */; };
 		FCC90AB120BC606D00D92219 /* registerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC90AB020BC606D00D92219 /* registerVC.swift */; };
-		FCC90AB320BC641400D92219 /* calendarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC90AB220BC641400D92219 /* calendarVC.swift */; };
 		FCC90AB520BC642A00D92219 /* messageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC90AB420BC642A00D92219 /* messageVC.swift */; };
 		FCC90AB720BC643F00D92219 /* projectVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC90AB620BC643F00D92219 /* projectVC.swift */; };
 		FCC90AB920BC644E00D92219 /* feeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC90AB820BC644E00D92219 /* feeVC.swift */; };
@@ -31,31 +42,35 @@
 		FCC90ABF20BCBB0300D92219 /* newsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC90ABE20BCBB0300D92219 /* newsCell.swift */; };
 		FCC90AC220BCC16900D92219 /* projectCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC90AC120BCC16900D92219 /* projectCell.swift */; };
 		FCC90AC420BCC53400D92219 /* feeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC90AC320BCC53400D92219 /* feeCell.swift */; };
-		FCD3837720EBC68E00568B96 /* scheduleAddVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD3837620EBC68E00568B96 /* scheduleAddVC.swift */; };
-		FCD3837920EBC78900568B96 /* projectModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD3837820EBC78900568B96 /* projectModel.swift */; };
-		FCD3837B20EC0CBD00568B96 /* matchedMemberModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD3837A20EC0CBD00568B96 /* matchedMemberModel.swift */; };
 		FCD3837D20ED6B6300568B96 /* QRcodeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD3837C20ED6B6200568B96 /* QRcodeVC.swift */; };
 		FCD3837F20ED6C5200568B96 /* didAddVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD3837E20ED6C5200568B96 /* didAddVC.swift */; };
 		FCD3838120ED751F00568B96 /* didScanVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD3838020ED751F00568B96 /* didScanVC.swift */; };
-		FCD53A8620BF106F00E92D91 /* scheduleDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD53A8520BF106F00E92D91 /* scheduleDetailVC.swift */; };
-		FCD53A8920BF10E000E92D91 /* scheduleTitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD53A8820BF10E000E92D91 /* scheduleTitleCell.swift */; };
-		FCD53A8B20BF10F800E92D91 /* scheduleLocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD53A8A20BF10F800E92D91 /* scheduleLocationCell.swift */; };
-		FCD53A8D20BF112200E92D91 /* scheduleType_1Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD53A8C20BF112200E92D91 /* scheduleType_1Cell.swift */; };
-		FCD53A8F20BF112E00E92D91 /* scheduleType_2Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD53A8E20BF112E00E92D91 /* scheduleType_2Cell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		25C033ED250CB7150496D9A9 /* Pods-projectManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-projectManager.debug.xcconfig"; path = "Pods/Target Support Files/Pods-projectManager/Pods-projectManager.debug.xcconfig"; sourceTree = "<group>"; };
 		3F15EA4B9BA8261383CD6000 /* Pods-projectManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-projectManager.release.xcconfig"; path = "Pods/Target Support Files/Pods-projectManager/Pods-projectManager.release.xcconfig"; sourceTree = "<group>"; };
 		451906413D794DBB56F2E766 /* Pods_projectManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_projectManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FC250B1E20DE4F9F00B664D0 /* scheduleEditlCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = scheduleEditlCell.swift; sourceTree = "<group>"; };
 		FC250B2020DF85BE00B664D0 /* scheduleEditVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = scheduleEditVC.swift; sourceTree = "<group>"; };
 		FC2E50F620D4DB740070B591 /* apiMananger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = apiMananger.swift; sourceTree = "<group>"; };
 		FC2E50F820D4E45D0070B591 /* tabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tabBarController.swift; sourceTree = "<group>"; };
-		FC2E50FA20D4F82F0070B591 /* eventModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eventModel.swift; sourceTree = "<group>"; };
 		FC3807DA20BC5A65004B554A /* loginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginVC.swift; sourceTree = "<group>"; };
-		FC55E85620C3D574006CC1FC /* calendarCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calendarCollectionCell.swift; sourceTree = "<group>"; };
-		FC785FCB20BF5E690000EB8E /* calendarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calendarCell.swift; sourceTree = "<group>"; };
+		FC4F137C20FC08580009D2FB /* scheduleAddVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = scheduleAddVC.swift; sourceTree = "<group>"; };
+		FC4F137D20FC08580009D2FB /* searchCalendarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = searchCalendarVC.swift; sourceTree = "<group>"; };
+		FC4F137E20FC08580009D2FB /* calendarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calendarVC.swift; sourceTree = "<group>"; };
+		FC4F138020FC08580009D2FB /* scheduleTitleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = scheduleTitleCell.swift; sourceTree = "<group>"; };
+		FC4F138120FC08580009D2FB /* scheduleType_2Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = scheduleType_2Cell.swift; sourceTree = "<group>"; };
+		FC4F138220FC08580009D2FB /* scheduleLocationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = scheduleLocationCell.swift; sourceTree = "<group>"; };
+		FC4F138320FC08580009D2FB /* calendarCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calendarCollectionCell.swift; sourceTree = "<group>"; };
+		FC4F138420FC08580009D2FB /* scheduleType_1Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = scheduleType_1Cell.swift; sourceTree = "<group>"; };
+		FC4F138520FC08580009D2FB /* calendarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calendarCell.swift; sourceTree = "<group>"; };
+		FC4F138620FC08580009D2FB /* scheduleEditlCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = scheduleEditlCell.swift; sourceTree = "<group>"; };
+		FC4F138720FC08580009D2FB /* scheduleConflictVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = scheduleConflictVC.swift; sourceTree = "<group>"; };
+		FC4F138820FC08580009D2FB /* scheduleDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = scheduleDetailVC.swift; sourceTree = "<group>"; };
+		FC4F138A20FC08B80009D2FB /* projectModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = projectModel.swift; sourceTree = "<group>"; };
+		FC4F138B20FC08B80009D2FB /* eventModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eventModel.swift; sourceTree = "<group>"; };
+		FC4F138C20FC08B80009D2FB /* matchedMemberModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = matchedMemberModel.swift; sourceTree = "<group>"; };
+		FC4F139C210439900009D2FB /* shopCalendarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shopCalendarVC.swift; sourceTree = "<group>"; };
 		FCB3471620BC55FA000FD864 /* projectManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = projectManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCB3471920BC55FA000FD864 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FCB3471B20BC55FA000FD864 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -64,7 +79,6 @@
 		FCB3472320BC55FA000FD864 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FCB3472520BC55FA000FD864 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FCC90AB020BC606D00D92219 /* registerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = registerVC.swift; sourceTree = "<group>"; };
-		FCC90AB220BC641400D92219 /* calendarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calendarVC.swift; sourceTree = "<group>"; };
 		FCC90AB420BC642A00D92219 /* messageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = messageVC.swift; sourceTree = "<group>"; };
 		FCC90AB620BC643F00D92219 /* projectVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = projectVC.swift; sourceTree = "<group>"; };
 		FCC90AB820BC644E00D92219 /* feeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = feeVC.swift; sourceTree = "<group>"; };
@@ -73,17 +87,9 @@
 		FCC90ABE20BCBB0300D92219 /* newsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newsCell.swift; sourceTree = "<group>"; };
 		FCC90AC120BCC16900D92219 /* projectCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = projectCell.swift; sourceTree = "<group>"; };
 		FCC90AC320BCC53400D92219 /* feeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = feeCell.swift; sourceTree = "<group>"; };
-		FCD3837620EBC68E00568B96 /* scheduleAddVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = scheduleAddVC.swift; sourceTree = "<group>"; };
-		FCD3837820EBC78900568B96 /* projectModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = projectModel.swift; sourceTree = "<group>"; };
-		FCD3837A20EC0CBD00568B96 /* matchedMemberModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = matchedMemberModel.swift; sourceTree = "<group>"; };
 		FCD3837C20ED6B6200568B96 /* QRcodeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRcodeVC.swift; sourceTree = "<group>"; };
 		FCD3837E20ED6C5200568B96 /* didAddVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = didAddVC.swift; sourceTree = "<group>"; };
 		FCD3838020ED751F00568B96 /* didScanVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = didScanVC.swift; sourceTree = "<group>"; };
-		FCD53A8520BF106F00E92D91 /* scheduleDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = scheduleDetailVC.swift; sourceTree = "<group>"; };
-		FCD53A8820BF10E000E92D91 /* scheduleTitleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = scheduleTitleCell.swift; sourceTree = "<group>"; };
-		FCD53A8A20BF10F800E92D91 /* scheduleLocationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = scheduleLocationCell.swift; sourceTree = "<group>"; };
-		FCD53A8C20BF112200E92D91 /* scheduleType_1Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = scheduleType_1Cell.swift; sourceTree = "<group>"; };
-		FCD53A8E20BF112E00E92D91 /* scheduleType_2Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = scheduleType_2Cell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +121,45 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		FC4F137B20FC08580009D2FB /* calendar */ = {
+			isa = PBXGroup;
+			children = (
+				FC4F137C20FC08580009D2FB /* scheduleAddVC.swift */,
+				FC4F137D20FC08580009D2FB /* searchCalendarVC.swift */,
+				FC4F137E20FC08580009D2FB /* calendarVC.swift */,
+				FC4F139C210439900009D2FB /* shopCalendarVC.swift */,
+				FC4F137F20FC08580009D2FB /* cell */,
+				FC4F138720FC08580009D2FB /* scheduleConflictVC.swift */,
+				FC4F138820FC08580009D2FB /* scheduleDetailVC.swift */,
+			);
+			name = calendar;
+			path = ../../projectManager_ShopOwner/projectManager_ShopOwner/calendar;
+			sourceTree = "<group>";
+		};
+		FC4F137F20FC08580009D2FB /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				FC4F138020FC08580009D2FB /* scheduleTitleCell.swift */,
+				FC4F138120FC08580009D2FB /* scheduleType_2Cell.swift */,
+				FC4F138220FC08580009D2FB /* scheduleLocationCell.swift */,
+				FC4F138320FC08580009D2FB /* calendarCollectionCell.swift */,
+				FC4F138420FC08580009D2FB /* scheduleType_1Cell.swift */,
+				FC4F138520FC08580009D2FB /* calendarCell.swift */,
+				FC4F138620FC08580009D2FB /* scheduleEditlCell.swift */,
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
+		FC4F138920FC08B80009D2FB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FC4F138A20FC08B80009D2FB /* projectModel.swift */,
+				FC4F138B20FC08B80009D2FB /* eventModel.swift */,
+				FC4F138C20FC08B80009D2FB /* matchedMemberModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		FCB3470D20BC55FA000FD864 = {
 			isa = PBXGroup;
 			children = (
@@ -143,10 +188,8 @@
 				FC2E50F820D4E45D0070B591 /* tabBarController.swift */,
 				FC3807DA20BC5A65004B554A /* loginVC.swift */,
 				FCC90AB020BC606D00D92219 /* registerVC.swift */,
-				FCD3837820EBC78900568B96 /* projectModel.swift */,
-				FC2E50FA20D4F82F0070B591 /* eventModel.swift */,
-				FCD3837A20EC0CBD00568B96 /* matchedMemberModel.swift */,
-				FCD53A8720BF107700E92D91 /* calendar */,
+				FC4F138920FC08B80009D2FB /* Model */,
+				FC4F137B20FC08580009D2FB /* calendar */,
 				FCC90AC020BCBB0B00D92219 /* messageVC */,
 				FCC90AB620BC643F00D92219 /* projectVC.swift */,
 				FCC90AC120BCC16900D92219 /* projectCell.swift */,
@@ -180,31 +223,6 @@
 				FCD3838020ED751F00568B96 /* didScanVC.swift */,
 			);
 			name = matchedMembers;
-			sourceTree = "<group>";
-		};
-		FCD53A8720BF107700E92D91 /* calendar */ = {
-			isa = PBXGroup;
-			children = (
-				FCC90AB220BC641400D92219 /* calendarVC.swift */,
-				FCD53A8520BF106F00E92D91 /* scheduleDetailVC.swift */,
-				FCD3837620EBC68E00568B96 /* scheduleAddVC.swift */,
-				FCD53A9020BF116C00E92D91 /* cell */,
-			);
-			path = calendar;
-			sourceTree = "<group>";
-		};
-		FCD53A9020BF116C00E92D91 /* cell */ = {
-			isa = PBXGroup;
-			children = (
-				FC55E85620C3D574006CC1FC /* calendarCollectionCell.swift */,
-				FC785FCB20BF5E690000EB8E /* calendarCell.swift */,
-				FCD53A8820BF10E000E92D91 /* scheduleTitleCell.swift */,
-				FCD53A8A20BF10F800E92D91 /* scheduleLocationCell.swift */,
-				FCD53A8C20BF112200E92D91 /* scheduleType_1Cell.swift */,
-				FCD53A8E20BF112E00E92D91 /* scheduleType_2Cell.swift */,
-				FC250B1E20DE4F9F00B664D0 /* scheduleEditlCell.swift */,
-			);
-			path = cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -341,36 +359,39 @@
 			buildActionMask = 2147483647;
 			files = (
 				FCD3837F20ED6C5200568B96 /* didAddVC.swift in Sources */,
-				FCC90AB320BC641400D92219 /* calendarVC.swift in Sources */,
 				FCC90ABF20BCBB0300D92219 /* newsCell.swift in Sources */,
 				FCB3471C20BC55FA000FD864 /* ViewController.swift in Sources */,
 				FC2E50F920D4E45D0070B591 /* tabBarController.swift in Sources */,
 				FC2E50F720D4DB740070B591 /* apiMananger.swift in Sources */,
-				FCD53A8D20BF112200E92D91 /* scheduleType_1Cell.swift in Sources */,
 				FC250B2120DF85BE00B664D0 /* scheduleEditVC.swift in Sources */,
+				FC4F139220FC08DD0009D2FB /* calendarVC.swift in Sources */,
+				FC4F139A20FC08EE0009D2FB /* calendarCell.swift in Sources */,
+				FC4F139320FC08E30009D2FB /* scheduleConflictVC.swift in Sources */,
+				FC4F139520FC08EA0009D2FB /* scheduleTitleCell.swift in Sources */,
+				FC4F139120FC08DB0009D2FB /* searchCalendarVC.swift in Sources */,
 				FCC90AB520BC642A00D92219 /* messageVC.swift in Sources */,
-				FCD3837920EBC78900568B96 /* projectModel.swift in Sources */,
 				FCC90ABD20BCBAF200D92219 /* msgCell.swift in Sources */,
 				FCD3838120ED751F00568B96 /* didScanVC.swift in Sources */,
-				FC785FCC20BF5E690000EB8E /* calendarCell.swift in Sources */,
-				FC250B1F20DE4F9F00B664D0 /* scheduleEditlCell.swift in Sources */,
+				FC4F138D20FC08D00009D2FB /* projectModel.swift in Sources */,
 				FCC90AB120BC606D00D92219 /* registerVC.swift in Sources */,
+				FC4F139420FC08E60009D2FB /* scheduleDetailVC.swift in Sources */,
 				FCD3837D20ED6B6300568B96 /* QRcodeVC.swift in Sources */,
-				FCD53A8F20BF112E00E92D91 /* scheduleType_2Cell.swift in Sources */,
-				FC55E85720C3D574006CC1FC /* calendarCollectionCell.swift in Sources */,
+				FC4F138F20FC08D50009D2FB /* matchedMemberModel.swift in Sources */,
 				FC3807DB20BC5A65004B554A /* loginVC.swift in Sources */,
-				FCD3837720EBC68E00568B96 /* scheduleAddVC.swift in Sources */,
+				FC4F139820FC08EE0009D2FB /* calendarCollectionCell.swift in Sources */,
+				FC4F139620FC08EE0009D2FB /* scheduleType_2Cell.swift in Sources */,
 				FCC90AB720BC643F00D92219 /* projectVC.swift in Sources */,
+				FC4F139020FC08D80009D2FB /* scheduleAddVC.swift in Sources */,
+				FC4F138E20FC08D20009D2FB /* eventModel.swift in Sources */,
 				FCB3471A20BC55FA000FD864 /* AppDelegate.swift in Sources */,
 				FCC90AB920BC644E00D92219 /* feeVC.swift in Sources */,
-				FCD53A8620BF106F00E92D91 /* scheduleDetailVC.swift in Sources */,
-				FCD53A8B20BF10F800E92D91 /* scheduleLocationCell.swift in Sources */,
-				FC2E50FB20D4F82F0070B591 /* eventModel.swift in Sources */,
 				FCC90AC420BCC53400D92219 /* feeCell.swift in Sources */,
+				FC4F139920FC08EE0009D2FB /* scheduleType_1Cell.swift in Sources */,
 				FCC90ABB20BC645F00D92219 /* otherVC.swift in Sources */,
+				FC4F139B20FC08EE0009D2FB /* scheduleEditlCell.swift in Sources */,
+				FC4F139720FC08EE0009D2FB /* scheduleLocationCell.swift in Sources */,
+				FC4F139D210439900009D2FB /* shopCalendarVC.swift in Sources */,
 				FCC90AC220BCC16900D92219 /* projectCell.swift in Sources */,
-				FCD3837B20EC0CBD00568B96 /* matchedMemberModel.swift in Sources */,
-				FCD53A8920BF10E000E92D91 /* scheduleTitleCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

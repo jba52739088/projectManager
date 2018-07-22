@@ -24,12 +24,12 @@ extension UIViewController {
                     let token = JSON["token"] as? String{
                     if Result {
                         appDelegate.token = token
-                      completionHandler(true)
-//                        self.calendarRequest(from: "", end: "", { (_) in
-//                            print("123")
-//                        })
+                        completionHandler(true)
+                        //                        self.calendarRequest(from: "", end: "", { (_) in
+                        //                            print("123")
+                        //                        })
                     }else {
-                      completionHandler(false)
+                        completionHandler(false)
                     }
                 }
             }else {
@@ -45,7 +45,7 @@ extension UIViewController {
             .responseJSON { response in
                 if let JSON = response.result.value as? [String:AnyObject] {
                     if let result = JSON["result"] as? Bool,
-                       let msg = JSON["msg"] as? String{
+                        let msg = JSON["msg"] as? String{
                         if result {
                             completionHandler(true, "")
                         }else {
@@ -55,6 +55,20 @@ extension UIViewController {
                 }else {
                     print("registerRequest: get JSON error")
                 }
+        }
+    }
+    
+    // 取得收件夾的括號數量
+    func getInboxNumRequest(_ completionHandler: @escaping (Int?) -> Void) {
+        guard let token = appDelegate.token else { return }
+        let url = "http://edu.iscom.com.tw:2039/API/api/lawyer_WebAPI/GetInboxNum/false"
+        let headers = ["Authorization": "Bearer \(token)"]
+        Alamofire.request(url, headers: headers).responseJSON { (response) -> Void in
+            if let results = response.result.value as? Int {
+                completionHandler(results)
+            }else {
+                print("getIDbyTokenRequest: get JSON error")
+            }
         }
     }
     
@@ -91,6 +105,65 @@ extension UIViewController {
         }
     }
     
+    // 搜尋行事曆
+    func searchCalendarRequest(key: String, b_mid: String, from: String, end: String, _ completionHandler: @escaping ([eventModel]?) -> Void) {
+        var allEvents: [eventModel] = []
+        guard let token = appDelegate.token else { return }
+        let url = "http://edu.iscom.com.tw:2039/API/api/lawyer_WebAPI/SearchCalendar/"
+        let headers = ["Authorization": "Bearer \(token)"]
+        let parameters = ["m_name":key, "b_mid":b_mid, "start_date":from, "end_date":end] as [String : Any]
+        Alamofire.request(url, method: .post, parameters: parameters, encoding: JSONEncoding.default, headers: headers)
+            .responseJSON { response in
+                if let results = response.result.value as? [Dictionary<String,AnyObject>] {
+                    for result in results {
+                        let aEvent = eventModel(CE_ID: result["CE_ID"] as? String ?? "",
+                                                M_ID: result["M_ID"] as? String ?? "",
+                                                P_ID: result["P_ID"] as? String ?? "",
+                                                OWNER_ID: result["OWNER_ID"] as? String ?? "",
+                                                GUEST: result["GUEST"] as? String ?? "",
+                                                P_NAME: result["P_NAME"] as? String ?? "",
+                                                P_CLASS: result["P_CLASS"] as? String ?? "",
+                                                C_DATE_START: result["C_DATE_START"] as? String ?? "",
+                                                C_DATE_END: result["C_DATE_END"] as? String ?? "",
+                                                MEETING_TYPE: result["MEETING_TYPE"] as? String ?? "",
+                                                MEETING_TITLE: result["MEETING_TITLE"] as? String ?? "",
+                                                MEETING_PLACE: result["MEETING_PLACE"] as? String ?? "",
+                                                MEETING_INFO: result["MEETING_INFO"] as? String ?? "",
+                                                STATUS: result["STATUS"] as? Int ?? 0,
+                                                SIDE: result["SIDE"] as? String ?? "")
+                        allEvents.append(aEvent)
+                    }
+                    completionHandler(allEvents)
+                }else {
+                    print("searchCalendarRequest: get JSON error")
+                }
+        }
+    }
+    
+    // 刪除行事曆
+    func deleteCalendarRequest(ceid: String, _ completionHandler: @escaping (Bool, String) -> Void) {
+        var allEvents: [eventModel] = []
+        guard let token = appDelegate.token else { return }
+        let url = "http://edu.iscom.com.tw:2039/API/api/lawyer_WebAPI/DeleteCalendar/"
+        let headers = ["Authorization": "Bearer \(token)"]
+        let parameters = ["ce_id":ceid] as [String : Any]
+        Alamofire.request(url, method: .post, parameters: parameters, encoding: JSONEncoding.default, headers: headers)
+            .responseJSON { response in
+                if let JSON = response.result.value as? [String:AnyObject] {
+                    if let result = JSON["result"] as? Bool,
+                        let msg = JSON["msg"] as? String{
+                        if result {
+                            completionHandler(true, "")
+                        }else {
+                            completionHandler(false, msg)
+                        }
+                    }
+                }else {
+                    print("deleteCalendarRequest: get JSON error")
+                }
+        }
+    }
+    
     // 取得專案類別
     func projectClassRequest(_ completionHandler: @escaping ([Dictionary<String,String>]?) -> Void) {
         var allClasses: [Dictionary<String,String>] = []
@@ -101,8 +174,8 @@ extension UIViewController {
             if let results = response.result.value as? [Dictionary<String,String>] {
                 for result in results {
                     guard let PC_ID = result["PC_ID"] as? String,           //  ID
-                          let PC_NAME = result["PC_NAME"] as? String,       //  類別名稱
-                          let PC_UPD = result["PC_UPD"] as? String          //  類別更新時間
+                        let PC_NAME = result["PC_NAME"] as? String,       //  類別名稱
+                        let PC_UPD = result["PC_UPD"] as? String          //  類別更新時間
                         else { return }
                     var _class: Dictionary<String,String> = [:]
                     _class["PC_ID"] = PC_ID
@@ -116,7 +189,7 @@ extension UIViewController {
             }
         }
     }
-
+    
     // 取得邀請對象
     // 取得已加入商家
     func matchedMemberRequest(_ completionHandler: @escaping ([MatchedMember]?) -> Void) {
@@ -128,12 +201,12 @@ extension UIViewController {
             if let results = response.result.value as? [Dictionary<String,AnyObject>] {
                 for result in results {
                     guard let R_ID = result["R_ID"] as? String,
-                          let MyName = result["MyName"] as? String,
-                          let M_ACCOUNT = result["M_ACCOUNT"] as? String,
-                          let M_SN = result["M_SN"] as? String,
-                          let M_NAME = result["M_NAME"] as? String,
-                          let Status = result["Status"] as? Int,
-                          let isHost = result["isHost"] as? Bool
+                        let MyName = result["MyName"] as? String,
+                        let M_ACCOUNT = result["M_ACCOUNT"] as? String,
+                        let M_SN = result["M_SN"] as? String,
+                        let M_NAME = result["M_NAME"] as? String,
+                        let Status = result["Status"] as? Int,
+                        let isHost = result["isHost"] as? Bool
                         else { return }
                     let aMatchedMember = MatchedMember(R_ID: R_ID, MyName: MyName, M_ACCOUNT: M_ACCOUNT, M_SN: M_SN, M_NAME: M_NAME, Status: Status, isHost: isHost)
                     allmatchedMembers.append(aMatchedMember)
@@ -146,20 +219,31 @@ extension UIViewController {
     }
     
     // 檢查是否衝突
-    func checkScheduleRequest(m_id: String, startDate: String, startHour: String, startMinute: String, endDate: String, endHour: String, endMinute: String, _ completionHandler: @escaping (Bool) -> Void) {
+    func checkScheduleRequest(m_id: String, startDate: String, startHour: String, startMinute: String, endDate: String, endHour: String, endMinute: String, _ completionHandler: @escaping (Bool, [Dictionary<String,String>]?) -> Void) {
         var allmatchedMembers: [MatchedMember] = []
         guard let token = appDelegate.token else { return }
         let url = "http://edu.iscom.com.tw:2039/API/api/lawyer_WebAPI/GetOverlapCalendar/\(m_id)/\(startDate)/\(startHour)/\(startMinute)/\(endDate)/\(endHour)/\(endMinute)"
         let headers = ["Authorization": "Bearer \(token)"]
         Alamofire.request(url, headers: headers).responseJSON { (response) -> Void in
-            if let results = response.result.value as? Array<Any> {
+            if let results = response.result.value as? Array<Any>, results.count == 0{
                 if results.count == 0 {
-                    completionHandler(true)
+                    completionHandler(true, nil)
                 }
             }else if let result = response.result.value as? Bool{
                 if result == false {
-                    completionHandler(true)
+                    completionHandler(true, nil)
                 }
+            }else if let results = response.result.value as? [Dictionary<String,AnyObject>] {
+                var conflictArray: [Dictionary<String,String>] = []
+                for result in results {
+                    var aConflict = Dictionary<String,String>()
+                    aConflict["GUEST"] = result["GUEST"] as? String ?? ""
+                    aConflict["MEETING_TITLE"] = result["MEETING_TITLE"] as? String ?? ""
+                    aConflict["C_DATE_START"] = result["C_DATE_START"] as? String ?? ""
+                    aConflict["C_DATE_END"] = result["C_DATE_END"] as? String ?? ""
+                    conflictArray.append(aConflict)
+                }
+                completionHandler(false, conflictArray)
             }else {
                 print("checkScheduleRequest: get JSON error")
             }
@@ -218,4 +302,68 @@ extension UIViewController {
                 }
         }
     }
+    
+    // 商家端：取得待審核商家
+    func getWatingMatchMemberRequest(_ completionHandler: @escaping ([MatchedMember]?) -> Void) {
+        var allmatchedMembers: [MatchedMember] = []
+        guard let token = appDelegate.token else { return }
+        let url = "http://edu.iscom.com.tw:2039/API/api/lawyer_WebAPI/GetWatingMatchMember/"
+        let headers = ["Authorization": "Bearer \(token)"]
+        Alamofire.request(url, headers: headers).responseJSON { (response) -> Void in
+            if let results = response.result.value as? [Dictionary<String,AnyObject>] {
+                for result in results {
+                    guard let R_ID = result["R_ID"] as? String,
+                        let MyName = result["MyName"] as? String,
+                        let M_ACCOUNT = result["M_ACCOUNT"] as? String,
+                        let M_SN = result["M_SN"] as? String,
+                        let M_NAME = result["M_NAME"] as? String,
+                        let Status = result["Status"] as? Int,
+                        let isHost = result["isHost"] as? Bool
+                        else { return }
+                    let aMatchedMember = MatchedMember(R_ID: R_ID, MyName: MyName, M_ACCOUNT: M_ACCOUNT, M_SN: M_SN, M_NAME: M_NAME, Status: Status, isHost: isHost)
+                    aMatchedMember.M_MAIL = result["M_MAIL"] as? String ?? ""
+                    aMatchedMember.M_TEL_D = result["M_TEL_D"] as? String ?? ""
+                    aMatchedMember.LastLogin = result["LastLogin"] as? String ?? ""
+                    allmatchedMembers.append(aMatchedMember)
+                }
+                completionHandler(allmatchedMembers)
+            }else {
+                print("getWatingMatchMemberRequest: get JSON error")
+            }
+        }
+    }
+    
+    // 商家端：取得已審核商家
+    func getAuditedMatchMemberRequest(_ completionHandler: @escaping ([[String: String]]?) -> Void) {
+        var allmatchedMembers: [[String: String]] = []
+        guard let token = appDelegate.token else { return }
+        let url = "http://edu.iscom.com.tw:2039/API/api/lawyer_WebAPI/GetAuditedMatchMember/"
+        let headers = ["Authorization": "Bearer \(token)"]
+        Alamofire.request(url, headers: headers).responseJSON { (response) -> Void in
+            if let results = response.result.value as? [Dictionary<String,AnyObject>] {
+                for result in results {
+                    let aMatchedMember = [result["M_NAME"] as? String ?? "": result["LastLogin"] as? String ?? ""]
+                    allmatchedMembers.append(aMatchedMember)
+                }
+                completionHandler(allmatchedMembers)
+            }else {
+                print("getAuditedMatchMemberRequest: get JSON error")
+            }
+        }
+    }
+    
+    // 商家端：取得QRCode
+    func getIDbyTokenRequest(_ completionHandler: @escaping (String?) -> Void) {
+        guard let token = appDelegate.token else { return }
+        let url = "http://edu.iscom.com.tw:2039/API/api/lawyer_WebAPI/GetIDbyToken/"
+        let headers = ["Authorization": "Bearer \(token)"]
+        Alamofire.request(url, headers: headers).responseJSON { (response) -> Void in
+            if let results = response.result.value as? String {
+                completionHandler(results)
+            }else {
+                print("getIDbyTokenRequest: get JSON error")
+            }
+        }
+    }
 }
+

@@ -36,11 +36,11 @@ class scheduleEditVC: UIViewController {
     }
     
     @IBAction func doConfirm(_ sender: Any) {
-        
+        self.navigationController?.popToRootViewController(animated: true)
     }
     
     @IBAction func doCancel(_ sender: Any) {
-        
+        self.navigationController?.popToRootViewController(animated: true)
     }
     
     func openTimePicker()  {

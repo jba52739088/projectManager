@@ -15,8 +15,11 @@ class MatchedMember: NSObject {
     var M_ACCOUNT: String = ""
     var M_SN: String = ""
     var M_NAME: String = ""
+    var M_MAIL: String = ""
+    var M_TEL_D: String = ""
     var Status: Int = 0
     var isHost: Bool = false
+    var LastLogin: String = ""
 
     init(R_ID: String,
          MyName: String,
