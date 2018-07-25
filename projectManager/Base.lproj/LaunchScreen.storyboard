@@ -18,19 +18,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="閃現畫面 歡迎畫面" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2TG-k3-8wq">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="p-01_歡迎畫面(底圖)" translatesAutoresizingMaskIntoConstraints="NO" id="Jls-yb-9mV">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="2TG-k3-8wq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="3a8-iR-KX5"/>
-                            <constraint firstItem="2TG-k3-8wq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="RoU-wL-q7E"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="2TG-k3-8wq" secondAttribute="bottom" id="WCa-oh-SmR"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2TG-k3-8wq" secondAttribute="trailing" id="dGl-y2-7Xe"/>
+                            <constraint firstItem="Jls-yb-9mV" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="RFQ-Pf-sLi"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Jls-yb-9mV" secondAttribute="bottom" id="gAn-xm-hnh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Jls-yb-9mV" secondAttribute="trailing" id="k10-z2-bRc"/>
+                            <constraint firstItem="Jls-yb-9mV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="p8z-Rd-MSA"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -40,4 +37,7 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="p-01_歡迎畫面(底圖)" width="1080" height="1920"/>
+    </resources>
 </document>

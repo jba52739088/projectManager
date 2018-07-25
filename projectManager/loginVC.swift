@@ -10,12 +10,12 @@ import UIKit
 
 class loginVC: UIViewController {
     
-    @IBOutlet weak var appLogo: UILabel!
     @IBOutlet weak var copyRight: UILabel!
     @IBOutlet weak var loginBtn: UIButton!
     @IBOutlet weak var registerBtn: UIButton!
     @IBOutlet weak var accTextField: UITextField!
     @IBOutlet weak var pwdTextField: UITextField!
+    @IBOutlet weak var versionLabel: UILabel!
     
 
     override func viewDidLoad() {
@@ -23,16 +23,19 @@ class loginVC: UIViewController {
         
         self.navigationController?.navigationBar.isHidden = true
 
-        appLogo.layer.borderColor = UIColor.black.cgColor
-        appLogo.layer.borderWidth = 2
         copyRight.layer.borderColor = UIColor.black.cgColor
         copyRight.layer.borderWidth = 2
         loginBtn.layer.cornerRadius = 3
         loginBtn.layer.masksToBounds = true
         registerBtn.layer.masksToBounds = true
         
+//        self.accTextField.text = "shopb"
         self.accTextField.text = "systemadmin"
         self.pwdTextField.text = "123"
+        
+        if let version = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String {
+            self.versionLabel.text = "客戶端 - v\(version)"
+        }
         
     }
     

@@ -23,35 +23,34 @@
         <!--LoginVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="loginVC" id="BYZ-38-t0r" customClass="loginVC" customModule="projectManager" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="p-02_登入區(底圖)" translatesAutoresizingMaskIntoConstraints="NO" id="X8L-xy-LT6">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                            </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="4Fi-ui-mkG">
-                                <rect key="frame" x="15" y="15" width="375" height="573"/>
+                                <rect key="frame" x="15" y="15" width="345" height="573"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="APP LOGO" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ztj-xN-nfZ">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="172"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="p-03_登入區(LOGO)" translatesAutoresizingMaskIntoConstraints="NO" id="OsE-58-tTX">
+                                        <rect key="frame" x="0.0" y="0.0" width="345" height="258"/>
+                                    </imageView>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="請輸入帳號..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="U6G-XT-JeI">
-                                        <rect key="frame" x="0.0" y="198" width="375" height="39.5"/>
+                                        <rect key="frame" x="0.0" y="284" width="345" height="39.5"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" textContentType="username"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="請輸入密碼..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Pt2-fP-WBn">
-                                        <rect key="frame" x="0.0" y="263.5" width="375" height="40"/>
+                                        <rect key="frame" x="0.0" y="349.5" width="345" height="40"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rwL-6W-tGI">
-                                        <rect key="frame" x="0.0" y="329.5" width="375" height="40"/>
+                                        <rect key="frame" x="0.0" y="415.5" width="345" height="40"/>
                                         <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <state key="normal" title="登入">
@@ -62,7 +61,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2jI-E2-EI1">
-                                        <rect key="frame" x="0.0" y="395.5" width="375" height="40"/>
+                                        <rect key="frame" x="0.0" y="481.5" width="345" height="40"/>
                                         <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <state key="normal" title="註冊">
@@ -74,24 +73,36 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="APP版權說明區" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CCh-La-l6y">
-                                        <rect key="frame" x="0.0" y="461.5" width="375" height="111.5"/>
+                                        <rect key="frame" x="0.0" y="547.5" width="345" height="25.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstItem="OsE-58-tTX" firstAttribute="height" secondItem="4Fi-ui-mkG" secondAttribute="height" multiplier="0.45" id="6Fg-Uc-aWD"/>
                                     <constraint firstItem="U6G-XT-JeI" firstAttribute="height" secondItem="4Fi-ui-mkG" secondAttribute="height" multiplier="0.07" id="MtI-4q-aHa"/>
                                     <constraint firstItem="Pt2-fP-WBn" firstAttribute="height" secondItem="U6G-XT-JeI" secondAttribute="height" id="NIq-wA-HwQ"/>
-                                    <constraint firstItem="Ztj-xN-nfZ" firstAttribute="height" secondItem="4Fi-ui-mkG" secondAttribute="height" multiplier="0.3" id="bpc-8U-aPW"/>
                                     <constraint firstItem="rwL-6W-tGI" firstAttribute="height" secondItem="Pt2-fP-WBn" secondAttribute="height" id="pDC-rX-Nyg"/>
                                     <constraint firstItem="2jI-E2-EI1" firstAttribute="height" secondItem="rwL-6W-tGI" secondAttribute="height" id="tI2-Jz-cDO"/>
                                 </constraints>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="客戶端 - v0.0.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mKK-UI-Z0d">
+                                <rect key="frame" x="10" y="10" width="96.5" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="X8L-xy-LT6" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="KRm-W8-Uz1"/>
                             <constraint firstItem="4Fi-ui-mkG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="LSy-9v-3Lm"/>
+                            <constraint firstItem="X8L-xy-LT6" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="MJP-T3-yTQ"/>
+                            <constraint firstItem="mKK-UI-Z0d" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="jGE-jY-ft7"/>
+                            <constraint firstAttribute="bottom" secondItem="X8L-xy-LT6" secondAttribute="bottom" id="jgj-hE-ahv"/>
+                            <constraint firstItem="mKK-UI-Z0d" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="jxK-z8-cmQ"/>
+                            <constraint firstItem="X8L-xy-LT6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="qla-r3-1fO"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="4Fi-ui-mkG" secondAttribute="bottom" constant="15" id="uoF-YB-IAx"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4Fi-ui-mkG" secondAttribute="trailing" constant="15" id="w2c-df-w0V"/>
                             <constraint firstItem="4Fi-ui-mkG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="15" id="xgy-FH-n6h"/>
@@ -101,25 +112,28 @@
                     <navigationItem key="navigationItem" id="zSf-RS-YE0"/>
                     <connections>
                         <outlet property="accTextField" destination="U6G-XT-JeI" id="8xC-zD-qOf"/>
-                        <outlet property="appLogo" destination="Ztj-xN-nfZ" id="2Vn-JU-MVQ"/>
                         <outlet property="copyRight" destination="CCh-La-l6y" id="MeI-eC-YjZ"/>
                         <outlet property="loginBtn" destination="rwL-6W-tGI" id="gZI-OW-vma"/>
                         <outlet property="pwdTextField" destination="Pt2-fP-WBn" id="ehS-H7-Ijc"/>
                         <outlet property="registerBtn" destination="2jI-E2-EI1" id="Gha-bH-hfZ"/>
+                        <outlet property="versionLabel" destination="mKK-UI-Z0d" id="oH5-nP-t9X"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="480.80000000000001" y="133.5832083958021"/>
         </scene>
         <!--註冊-->
         <scene sceneID="BIQ-fT-wCM">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dXH-bS-7HK" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="HIw-lT-PH1" customClass="registerVC" customModule="projectManager" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Fdz-EK-TpS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="p-04_註冊(底圖)" translatesAutoresizingMaskIntoConstraints="NO" id="Ah0-6g-vA7">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                            </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="nE2-gY-i0O">
                                 <rect key="frame" x="15" y="10" width="345" height="516"/>
                                 <subviews>
@@ -189,12 +203,16 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="nE2-gY-i0O" firstAttribute="top" secondItem="5oP-nh-fMj" secondAttribute="top" constant="10" id="29E-fQ-VFt"/>
+                            <constraint firstItem="Ah0-6g-vA7" firstAttribute="trailing" secondItem="5oP-nh-fMj" secondAttribute="trailing" id="4xo-YH-PnI"/>
                             <constraint firstItem="TYC-ii-4Mm" firstAttribute="top" secondItem="nE2-gY-i0O" secondAttribute="bottom" constant="20" id="GLd-g3-fPg"/>
                             <constraint firstItem="nE2-gY-i0O" firstAttribute="leading" secondItem="5oP-nh-fMj" secondAttribute="leading" constant="15" id="M7V-M1-s54"/>
                             <constraint firstItem="TYC-ii-4Mm" firstAttribute="height" secondItem="Fdz-EK-TpS" secondAttribute="height" multiplier="0.07" id="Mb8-GN-DxE"/>
                             <constraint firstItem="5oP-nh-fMj" firstAttribute="bottom" secondItem="TYC-ii-4Mm" secondAttribute="bottom" constant="15" id="VoX-UV-BQJ"/>
+                            <constraint firstAttribute="bottom" secondItem="Ah0-6g-vA7" secondAttribute="bottom" id="ZML-LQ-SLf"/>
+                            <constraint firstItem="Ah0-6g-vA7" firstAttribute="top" secondItem="5oP-nh-fMj" secondAttribute="top" id="ZdQ-Je-Yuu"/>
                             <constraint firstItem="5oP-nh-fMj" firstAttribute="trailing" secondItem="nE2-gY-i0O" secondAttribute="trailing" constant="15" id="b6d-mD-pvw"/>
                             <constraint firstItem="5oP-nh-fMj" firstAttribute="trailing" secondItem="TYC-ii-4Mm" secondAttribute="trailing" constant="15" id="gBC-IC-Bkf"/>
+                            <constraint firstItem="Ah0-6g-vA7" firstAttribute="leading" secondItem="5oP-nh-fMj" secondAttribute="leading" id="skI-nL-H3I"/>
                             <constraint firstItem="TYC-ii-4Mm" firstAttribute="leading" secondItem="5oP-nh-fMj" secondAttribute="leading" constant="15" id="tOA-Cm-SZM"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="5oP-nh-fMj"/>
@@ -212,20 +230,20 @@
                         <outlet property="registerBtn" destination="TYC-ii-4Mm" id="XcX-9p-XIl"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dXH-bS-7HK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1196" y="133.5832083958021"/>
         </scene>
         <!--我的專案-->
         <scene sceneID="VSF-Pl-D3H">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="fsM-44-JCO" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="an1-7N-EL9" customClass="projectVC" customModule="projectManager" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kig-Vj-rmC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="rS5-lH-lQP">
-                                <rect key="frame" x="0.0" y="64" width="375" height="34.5"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="32"/>
                                 <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <segments>
                                     <segment title="進行中"/>
@@ -237,7 +255,7 @@
                                 </connections>
                             </segmentedControl>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Req-Jn-SYG">
-                                <rect key="frame" x="5" y="92.5" width="365" height="525.5"/>
+                                <rect key="frame" x="5" y="90" width="365" height="528"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="80" id="Qvb-vx-H4j" customClass="projectCell" customModule="projectManager" customModuleProvider="target">
@@ -321,20 +339,20 @@
                         <outlet property="tableView" destination="Req-Jn-SYG" id="OHV-lU-UUr"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fsM-44-JCO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3929" y="134"/>
         </scene>
         <!--費用管理-->
         <scene sceneID="DiD-69-CuL">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="urK-51-5ow" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="XCP-AJ-yNp" customClass="feeVC" customModule="projectManager" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Thc-ba-LQX">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="qcz-qC-zol">
-                                <rect key="frame" x="0.0" y="64" width="375" height="34.5"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="32"/>
                                 <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <segments>
                                     <segment title="未付款"/>
@@ -346,7 +364,7 @@
                                 </connections>
                             </segmentedControl>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="wuo-3R-zx6">
-                                <rect key="frame" x="5" y="102.5" width="365" height="564.5"/>
+                                <rect key="frame" x="5" y="100" width="365" height="518"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="60" id="xX9-bs-1f5" customClass="feeCell" customModule="projectManager" customModuleProvider="target">
@@ -454,30 +472,30 @@
                         <outlet property="tableView" destination="wuo-3R-zx6" id="5TW-Ii-KmE"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="urK-51-5ow" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3929" y="915"/>
         </scene>
         <!--其他功能-->
         <scene sceneID="Ewj-SJ-lf5">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="fgX-2m-cAi" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="DbB-Lj-wMY" customClass="otherVC" customModule="projectManager" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YQZ-PC-xKC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="8Qh-kn-0GX">
-                                <rect key="frame" x="19" y="84" width="337.5" height="86.5"/>
+                                <rect key="frame" x="19" y="84" width="337.5" height="80.5"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LOu-iB-ZnZ">
-                                        <rect key="frame" x="0.0" y="0.0" width="86.5" height="86.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="80.5" height="80.5"/>
                                         <state key="normal" image="u224"/>
                                         <connections>
                                             <action selector="tapMessageBtn:" destination="DbB-Lj-wMY" eventType="touchUpInside" id="wK1-aJ-iRj"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E3s-Zi-xBn">
-                                        <rect key="frame" x="251" y="0.0" width="86.5" height="86.5"/>
+                                        <rect key="frame" x="257" y="0.0" width="80.5" height="80.5"/>
                                         <state key="normal" image="u643"/>
                                         <connections>
                                             <action selector="tapTopupBtn:" destination="DbB-Lj-wMY" eventType="touchUpInside" id="Sln-Bf-owE"/>
@@ -490,16 +508,16 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="dPS-YO-wyN">
-                                <rect key="frame" x="19" y="175.5" width="337.5" height="16.5"/>
+                                <rect key="frame" x="19" y="169.5" width="337.5" height="15.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="訊息" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9m5-T0-vyb">
-                                        <rect key="frame" x="0.0" y="0.0" width="86.5" height="16.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="80.5" height="15.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xG1-Zz-CFC">
-                                        <rect key="frame" x="125.5" y="0.0" width="86.5" height="16.5"/>
+                                        <rect key="frame" x="128.5" y="0.0" width="80.5" height="15.5"/>
                                         <string key="text">商家掃描
 </string>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -507,7 +525,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OGo-kY-QjT">
-                                        <rect key="frame" x="251" y="0.0" width="86.5" height="16.5"/>
+                                        <rect key="frame" x="257" y="0.0" width="80.5" height="15.5"/>
                                         <string key="text">儲值
 </string>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -521,22 +539,22 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="MLW-xJ-09o">
-                                <rect key="frame" x="19" y="202" width="337.5" height="86.5"/>
+                                <rect key="frame" x="19" y="195" width="337.5" height="80.5"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LiA-Mc-nw5">
-                                        <rect key="frame" x="0.0" y="0.0" width="86.5" height="86.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="80.5" height="80.5"/>
                                         <state key="normal" image="u1185"/>
                                         <connections>
                                             <action selector="tapWillBtn:" destination="DbB-Lj-wMY" eventType="touchUpInside" id="EmU-8V-nuw"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kSc-aQ-ymC">
-                                        <rect key="frame" x="125.5" y="0.0" width="86.5" height="86.5"/>
+                                        <rect key="frame" x="128.5" y="0.0" width="80.5" height="80.5"/>
                                         <color key="backgroundColor" red="0.54117647059999996" green="0.76862745099999996" blue="0.34509803919999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Button"/>
                                     </button>
                                     <button opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JAI-CH-dmF">
-                                        <rect key="frame" x="251" y="0.0" width="86.5" height="86.5"/>
+                                        <rect key="frame" x="257" y="0.0" width="80.5" height="80.5"/>
                                         <color key="backgroundColor" red="0.54117647059999996" green="0.76862745099999996" blue="0.34509803919999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Button"/>
                                     </button>
@@ -548,10 +566,10 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="ygg-Zf-a8K">
-                                <rect key="frame" x="19" y="294" width="337.5" height="16.5"/>
+                                <rect key="frame" x="19" y="281" width="337.5" height="15.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nuj-wj-MgM">
-                                        <rect key="frame" x="0.0" y="0.0" width="86.5" height="16.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="80.5" height="15.5"/>
                                         <string key="text">遺囑管理
 </string>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -559,13 +577,13 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GZY-R4-nZF">
-                                        <rect key="frame" x="125.5" y="0.0" width="86.5" height="16.5"/>
+                                        <rect key="frame" x="128.5" y="0.0" width="80.5" height="15.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ibd-Ve-gQ6">
-                                        <rect key="frame" x="251" y="0.0" width="86.5" height="16.5"/>
+                                        <rect key="frame" x="257" y="0.0" width="80.5" height="15.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -619,16 +637,16 @@
                         <outlet property="willBtn" destination="LiA-Mc-nw5" id="Eaa-2D-szi"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fgX-2m-cAi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3929" y="1700"/>
         </scene>
         <!--已加入商家-->
         <scene sceneID="nuU-LH-gMu">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="3Mx-Wu-gbf" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="Lxb-gY-Q49" customClass="didAddVC" customModule="projectManager" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AJV-IV-EG3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="GvG-cZ-Tqx">
@@ -674,20 +692,20 @@
                         <outlet property="tableView" destination="GvG-cZ-Tqx" id="Y7b-j7-7Yq"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Mx-Wu-gbf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5105" y="1700"/>
         </scene>
         <!--訊息中心-->
         <scene sceneID="h6Y-54-YAD">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="M8R-r7-Wgq" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="ZcA-Xo-f9U" customClass="messageVC" customModule="projectManager" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fmp-PD-ApP">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="bUC-6L-xWF">
-                                <rect key="frame" x="0.0" y="64" width="375" height="34.5"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="32"/>
                                 <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <segments>
                                     <segment title="通知"/>
@@ -699,7 +717,7 @@
                                 </connections>
                             </segmentedControl>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Zxb-H1-SDB">
-                                <rect key="frame" x="5" y="102.5" width="365" height="515.5"/>
+                                <rect key="frame" x="5" y="100" width="365" height="518"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="60" id="Cgs-q5-eRb" customClass="msgCell" customModule="projectManager" customModuleProvider="target">
@@ -849,16 +867,16 @@
                         <segue destination="jLb-el-JsN" kind="push" id="wvk-Ug-NZX"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M8R-r7-Wgq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3928.8000000000002" y="-627.4362818590705"/>
         </scene>
         <!--行程詳細資訊-->
         <scene sceneID="cRd-bt-hN9">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="G1m-fI-6Nq" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="scheduleDetailVC" id="jLb-el-JsN" customClass="scheduleDetailVC" customModule="projectManager" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lhV-KV-cQe">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="amL-t9-neP">
@@ -1032,13 +1050,13 @@
                         <segue destination="p4V-f2-zfa" kind="push" id="iTI-8Z-Q2k"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G1m-fI-6Nq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4700" y="-627.4362818590705"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="XrG-st-biF">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="OaQ-9z-DNi" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="meI-G3-QQS" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="VT7-jg-hOi">
@@ -1051,22 +1069,23 @@
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="W0r-U2-NiH"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OaQ-9z-DNi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-274" y="134"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="2Nb-xQ-kjw">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Chc-Un-x0b" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tabBarController storyboardIdentifier="tabbarController" automaticallyAdjustsScrollViewInsets="NO" id="Qt4-Si-a8u" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="tabbarController" automaticallyAdjustsScrollViewInsets="NO" id="Qt4-Si-a8u" customClass="tabBarController" customModule="projectManager" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="HSm-cL-ekA"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="SKD-DS-1aA">
+                    <tabBar key="tabBar" autoresizesSubviews="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="SKD-DS-1aA">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
+                        <outlet property="_tabBar" destination="SKD-DS-1aA" id="qFF-xC-cJi"/>
                         <segue destination="SyH-Y6-urL" kind="relationship" relationship="viewControllers" id="5yv-nA-fpw"/>
                         <segue destination="Te1-SS-Uzp" kind="relationship" relationship="viewControllers" id="vKd-cb-tmQ"/>
                         <segue destination="Mab-AC-qoq" kind="relationship" relationship="viewControllers" id="qse-4d-Rbc"/>
@@ -1074,34 +1093,38 @@
                         <segue destination="m2m-RH-64S" kind="relationship" relationship="viewControllers" id="KhM-Tj-mxt"/>
                     </connections>
                 </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Chc-Un-x0b" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2074" y="134"/>
         </scene>
         <!--行事曆-->
         <scene sceneID="atn-lF-15f">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Bo6-fO-hxs" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="SyH-Y6-urL" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="行事曆" image="u193" selectedImage="u193" id="rjj-IF-lDq"/>
+                    <tabBarItem key="tabBarItem" title="行事曆" image="2-01行事曆icon(未點)" selectedImage="2-02行事曆icon(已點)" id="rjj-IF-lDq"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="R7J-Cc-6H1">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
                         <segue destination="LVE-oT-2os" kind="relationship" relationship="rootViewController" id="t8Q-zg-Pv6"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bo6-fO-hxs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3155.1999999999998" y="-1363.7181409295354"/>
         </scene>
         <!--訊息中心-->
         <scene sceneID="QLA-9f-XVL">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="WpM-jt-dXr" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Te1-SS-Uzp" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="訊息中心" image="u197" selectedImage="u197" id="n3Q-15-fbM"/>
+                    <tabBarItem key="tabBarItem" title="訊息中心" image="2-03訊息中心icon(未點)" selectedImage="2-04訊息中心icon(已點)" id="n3Q-15-fbM"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="f7t-f9-p4x">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -1112,15 +1135,15 @@
                         <segue destination="ZcA-Xo-f9U" kind="relationship" relationship="rootViewController" id="Qu8-yG-Y0x"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WpM-jt-dXr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3155.1999999999998" y="-626.08695652173913"/>
         </scene>
         <!--我的專案-->
         <scene sceneID="H7q-64-Ihw">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="R8o-lY-hHX" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Mab-AC-qoq" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="我的專案" image="u201" selectedImage="u201" id="Zkw-ht-ux8"/>
+                    <tabBarItem key="tabBarItem" title="我的專案" image="2-05我的專案icon(未點)" selectedImage="2-06我的專案icon(已點)" id="Zkw-ht-ux8"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="rK8-dK-rdb">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -1131,15 +1154,15 @@
                         <segue destination="an1-7N-EL9" kind="relationship" relationship="rootViewController" id="WoD-Qo-JJf"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R8o-lY-hHX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3155.1999999999998" y="133.13343328335833"/>
         </scene>
         <!--費用管理-->
         <scene sceneID="WZb-R4-3J7">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="EQt-L1-I6i" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1Gg-ad-xGU" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="費用管理" image="u199" selectedImage="u199" id="Mv3-dg-Ueu"/>
+                    <tabBarItem key="tabBarItem" title="費用管理" image="2-07費用管理icon(未點)" selectedImage="2-08費用管理icon(已點)" id="Mv3-dg-Ueu"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Wtg-cN-R7Z">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -1150,15 +1173,15 @@
                         <segue destination="XCP-AJ-yNp" kind="relationship" relationship="rootViewController" id="jx4-PQ-12O"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EQt-L1-I6i" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3155.1999999999998" y="915.74212893553226"/>
         </scene>
         <!--其他功能-->
         <scene sceneID="8QH-Zm-cq7">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="J7X-Un-XAC" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="m2m-RH-64S" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="其他功能" image="u203" selectedImage="u203" id="qYQ-43-k87"/>
+                    <tabBarItem key="tabBarItem" title="其他功能" image="2-09其他功能icon(未點)" selectedImage="2-10其他功能icon(已點)" id="qYQ-43-k87"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Jo8-x3-WAn">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -1169,21 +1192,24 @@
                         <segue destination="DbB-Lj-wMY" kind="relationship" relationship="rootViewController" id="iMp-Hm-ruQ"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J7X-Un-XAC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3155.1999999999998" y="1700.1499250374814"/>
         </scene>
         <!--修改行事曆-->
         <scene sceneID="R2r-82-H5x">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="3Mj-Xc-igP" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="scheduleEditVC" id="p4V-f2-zfa" customClass="scheduleEditVC" customModule="projectManager" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="icx-LV-Dwc">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="p-08_新增行事曆底圖" translatesAutoresizingMaskIntoConstraints="NO" id="aHe-kd-ZBP">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                            </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="o5X-hZ-ufK">
                                 <rect key="frame" x="0.0" y="64" width="375" height="554"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="scheduleEditCell" rowHeight="60" id="LmC-JN-k4p" customClass="scheduleEditlCell" customModule="projectManager" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="60"/>
@@ -1292,7 +1318,11 @@
                             <constraint firstItem="Xo8-LO-5Qu" firstAttribute="trailing" secondItem="o5X-hZ-ufK" secondAttribute="trailing" id="1LN-qE-P2w"/>
                             <constraint firstItem="Xo8-LO-5Qu" firstAttribute="bottom" secondItem="o5X-hZ-ufK" secondAttribute="bottom" id="BaM-uB-TXR"/>
                             <constraint firstItem="o5X-hZ-ufK" firstAttribute="top" secondItem="Xo8-LO-5Qu" secondAttribute="top" id="Hcv-hq-Tsd"/>
+                            <constraint firstItem="Xo8-LO-5Qu" firstAttribute="bottom" secondItem="aHe-kd-ZBP" secondAttribute="bottom" id="PrI-td-87j"/>
+                            <constraint firstItem="Xo8-LO-5Qu" firstAttribute="trailing" secondItem="aHe-kd-ZBP" secondAttribute="trailing" id="aDq-i8-FN0"/>
+                            <constraint firstItem="aHe-kd-ZBP" firstAttribute="leading" secondItem="Xo8-LO-5Qu" secondAttribute="leading" id="lOh-O2-I5Q"/>
                             <constraint firstItem="o5X-hZ-ufK" firstAttribute="leading" secondItem="Xo8-LO-5Qu" secondAttribute="leading" id="odj-fW-k8X"/>
+                            <constraint firstItem="aHe-kd-ZBP" firstAttribute="top" secondItem="icx-LV-Dwc" secondAttribute="topMargin" id="sGc-RX-ccu"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Xo8-LO-5Qu"/>
                     </view>
@@ -1314,20 +1344,20 @@
                         <outlet property="tableView" destination="o5X-hZ-ufK" id="cgt-tG-m7M"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Mj-Xc-igP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5425" y="-627"/>
         </scene>
         <!--張律師事務所-->
         <scene sceneID="1s7-uP-1fj">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="JGn-HI-VNw" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="QRcodeVC" id="D8c-5u-V4X" customClass="QRcodeVC" customModule="projectManager" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="7fz-HD-6LB"/>
                         <viewControllerLayoutGuide type="bottom" id="KFS-lv-5Uy"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="pSw-H1-1FN">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No QR Code is detected" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QMo-tM-ron">
@@ -1341,7 +1371,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="請掃描商家QRCode" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KGF-KZ-NSg">
-                                <rect key="frame" x="112" y="389.5" width="151" height="21"/>
+                                <rect key="frame" x="112" y="360.5" width="151" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -1366,16 +1396,16 @@
                         <segue destination="Y5f-jR-eGP" kind="push" id="AID-VL-140"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JGn-HI-VNw" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5870" y="1700"/>
         </scene>
         <!--張律師事務所-->
         <scene sceneID="86e-60-fTN">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ARs-ta-7mb" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="didScanVC" id="Y5f-jR-eGP" customClass="didScanVC" customModule="projectManager" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jKt-9D-Xz4">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="商家名稱" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tW1-k9-gWl">
@@ -1417,22 +1447,26 @@
                         <outlet property="headerLabel" destination="tW1-k9-gWl" id="1cl-2X-LgP"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ARs-ta-7mb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="6650" y="1700"/>
         </scene>
         <!--1月-->
         <scene sceneID="get-XT-2OK">
             <objects>
-                <viewController id="LVE-oT-2os" customClass="calendarVC" customModule="projectManager_ShopOwner" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="LVE-oT-2os" customClass="calendarVC" customModule="projectManager" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FvV-u3-Moe">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="p-07_行事曆時間軸呈現區(底圖)" translatesAutoresizingMaskIntoConstraints="NO" id="qIf-E4-vda">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                            </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" alwaysBounceVertical="YES" bouncesZoom="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Mwp-El-Bp2">
-                                <rect key="frame" x="5" y="484" width="365" height="134"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <rect key="frame" x="5" y="455" width="365" height="163"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="40" id="Atl-mp-zFU" customClass="calendarCell" customModule="projectManager_ShopOwner" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="40" id="Atl-mp-zFU" customClass="calendarCell" customModule="projectManager" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="365" height="40"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Atl-mp-zFU" id="zaU-Sy-fnM">
@@ -1514,6 +1548,7 @@
                                                 <constraint firstItem="TbS-ei-76a" firstAttribute="leading" secondItem="zaU-Sy-fnM" secondAttribute="leading" constant="10" id="sDA-dp-dhz"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
                                             <outlet property="endTimeLabel" destination="vgH-1N-GbR" id="qvE-Yx-pM4"/>
                                             <outlet property="locationLabel" destination="rmN-jz-mnK" id="QYe-r6-EU4"/>
@@ -1596,7 +1631,7 @@
                                 </constraints>
                             </view>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="wuJ-05-ETP">
-                                <rect key="frame" x="0.0" y="84" width="375" height="400"/>
+                                <rect key="frame" x="0.0" y="84" width="375" height="371"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="BVW-q0-Ebq">
                                     <size key="itemSize" width="98" height="177"/>
@@ -1605,7 +1640,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="xAO-vd-UGx" customClass="calendarCollectionCell" customModule="projectManager_ShopOwner" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="xAO-vd-UGx" customClass="calendarCollectionCell" customModule="projectManager" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="98" height="177"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -1672,13 +1707,17 @@
                             <constraint firstItem="Mwp-El-Bp2" firstAttribute="top" secondItem="wuJ-05-ETP" secondAttribute="bottom" id="2qb-dH-jHD"/>
                             <constraint firstItem="D6v-9q-tvP" firstAttribute="leading" secondItem="FvV-u3-Moe" secondAttribute="leading" id="6C6-Oi-PaG"/>
                             <constraint firstItem="dse-3B-Vcf" firstAttribute="trailing" secondItem="Mwp-El-Bp2" secondAttribute="trailing" constant="5" id="CSn-Mg-dkI"/>
+                            <constraint firstAttribute="bottom" secondItem="qIf-E4-vda" secondAttribute="bottom" id="ChA-bg-6Od"/>
                             <constraint firstItem="wuJ-05-ETP" firstAttribute="height" secondItem="FvV-u3-Moe" secondAttribute="height" multiplier="3/5" id="MQs-5x-MW7"/>
+                            <constraint firstItem="qIf-E4-vda" firstAttribute="leading" secondItem="dse-3B-Vcf" secondAttribute="leading" id="O9J-6t-167"/>
                             <constraint firstItem="wuJ-05-ETP" firstAttribute="top" secondItem="D6v-9q-tvP" secondAttribute="bottom" id="QOF-74-N9G"/>
                             <constraint firstItem="Mwp-El-Bp2" firstAttribute="leading" secondItem="dse-3B-Vcf" secondAttribute="leading" constant="5" id="Qr5-Ds-kML"/>
                             <constraint firstItem="D6v-9q-tvP" firstAttribute="top" secondItem="dse-3B-Vcf" secondAttribute="top" id="SnE-RC-pJL"/>
                             <constraint firstItem="wuJ-05-ETP" firstAttribute="leading" secondItem="dse-3B-Vcf" secondAttribute="leading" id="TYC-sk-avJ"/>
                             <constraint firstItem="dse-3B-Vcf" firstAttribute="bottom" secondItem="Mwp-El-Bp2" secondAttribute="bottom" id="aVv-fy-onP"/>
                             <constraint firstItem="wuJ-05-ETP" firstAttribute="trailing" secondItem="dse-3B-Vcf" secondAttribute="trailing" id="hiG-ca-BpI"/>
+                            <constraint firstItem="qIf-E4-vda" firstAttribute="trailing" secondItem="dse-3B-Vcf" secondAttribute="trailing" id="jfn-db-ZsS"/>
+                            <constraint firstItem="qIf-E4-vda" firstAttribute="top" secondItem="FvV-u3-Moe" secondAttribute="top" id="mdM-C5-TAg"/>
                             <constraint firstAttribute="trailing" secondItem="D6v-9q-tvP" secondAttribute="trailing" id="zFJ-Zc-kXd"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="dse-3B-Vcf"/>
@@ -1692,18 +1731,17 @@
                             </connections>
                         </barButtonItem>
                         <rightBarButtonItems>
-                            <barButtonItem systemItem="add" id="tE5-dV-glr">
-                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <barButtonItem image="2-13新增行事曆icon" style="plain" id="tE5-dV-glr">
                                 <connections>
                                     <action selector="tapAddBtn:" destination="LVE-oT-2os" id="DVU-0S-d9S"/>
                                 </connections>
                             </barButtonItem>
-                            <barButtonItem image="u691" id="1tV-km-8ln">
+                            <barButtonItem image="2-12商家端搜詢icon" style="plain" id="1tV-km-8ln">
                                 <connections>
                                     <action selector="tapSearchTimeBtn:" destination="LVE-oT-2os" id="nSS-es-cUS"/>
                                 </connections>
                             </barButtonItem>
-                            <barButtonItem image="u693" id="qKE-Mf-Id4">
+                            <barButtonItem image="2-11行事曆搜詢icon" style="plain" id="qKE-Mf-Id4">
                                 <connections>
                                     <action selector="tapSearchBtn:" destination="LVE-oT-2os" id="kQe-g5-MJS"/>
                                 </connections>
@@ -1724,14 +1762,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6IT-Ku-q80" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3929" y="-1364"/>
+            <point key="canvasLocation" x="3928.8000000000002" y="-1364.1679160419792"/>
         </scene>
         <!--商家行事曆-->
         <scene sceneID="ORT-fX-fK9">
             <objects>
                 <viewController storyboardIdentifier="shopCalendarVC" id="dJw-3G-OUl" customClass="shopCalendarVC" customModule="projectManager" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2CU-OB-pc8">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="JXK-hH-UGU">
@@ -1774,7 +1812,7 @@
         <!--Schedule ConflictVC-->
         <scene sceneID="GJB-Xo-chJ">
             <objects>
-                <viewController storyboardIdentifier="scheduleConflictVC" id="bAl-8Q-dkL" customClass="scheduleConflictVC" customModule="projectManager_ShopOwner" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="scheduleConflictVC" id="bAl-8Q-dkL" customClass="scheduleConflictVC" customModule="projectManager" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gKG-7J-Tsh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1858,16 +1896,20 @@
         <!--新增行程-->
         <scene sceneID="FPf-pE-lF9">
             <objects>
-                <viewController storyboardIdentifier="scheduleAddVC" id="7RV-6u-rCL" customClass="scheduleAddVC" customModule="projectManager_ShopOwner" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="scheduleAddVC" id="7RV-6u-rCL" customClass="scheduleAddVC" customModule="projectManager" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BVa-oc-P96">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="p-08_新增行事曆底圖" translatesAutoresizingMaskIntoConstraints="NO" id="LCf-fJ-LEl">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                            </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="jtF-hC-cue">
                                 <rect key="frame" x="0.0" y="64" width="375" height="554"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="scheduleEditCell" rowHeight="60" id="r44-Rm-b8l" customClass="scheduleEditlCell" customModule="projectManager_ShopOwner" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="scheduleEditCell" rowHeight="60" id="r44-Rm-b8l" customClass="scheduleEditlCell" customModule="projectManager" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="r44-Rm-b8l" id="JEV-jZ-osC">
@@ -1892,7 +1934,7 @@
                                             <outlet property="textField" destination="FEF-dY-j3a" id="OAn-d9-5ME"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="scheduleType_1Cell" id="hro-tp-3Hn" customClass="scheduleType_1Cell" customModule="projectManager_ShopOwner" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="scheduleType_1Cell" id="hro-tp-3Hn" customClass="scheduleType_1Cell" customModule="projectManager" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="88" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hro-tp-3Hn" id="5RK-LG-4YP">
@@ -1927,7 +1969,7 @@
                                             <outlet property="titleLabel" destination="ceV-1t-hub" id="chk-5O-5yj"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="scheduleType_2Cell" id="S6v-AO-zEX" customClass="scheduleType_2Cell" customModule="projectManager_ShopOwner" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="scheduleType_2Cell" id="S6v-AO-zEX" customClass="scheduleType_2Cell" customModule="projectManager" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="132" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="S6v-AO-zEX" id="Sxc-I7-lOR">
@@ -1971,7 +2013,11 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="LCf-fJ-LEl" firstAttribute="top" secondItem="UiH-5A-UBa" secondAttribute="top" id="0wG-pt-cVb"/>
+                            <constraint firstItem="LCf-fJ-LEl" firstAttribute="bottom" secondItem="UiH-5A-UBa" secondAttribute="bottom" id="ER1-c2-Hgk"/>
                             <constraint firstItem="UiH-5A-UBa" firstAttribute="trailing" secondItem="jtF-hC-cue" secondAttribute="trailing" id="QU7-ZR-tIs"/>
+                            <constraint firstItem="LCf-fJ-LEl" firstAttribute="trailing" secondItem="UiH-5A-UBa" secondAttribute="trailing" id="Yer-ne-5yw"/>
+                            <constraint firstItem="LCf-fJ-LEl" firstAttribute="leading" secondItem="UiH-5A-UBa" secondAttribute="leading" id="b2p-KC-HZx"/>
                             <constraint firstItem="jtF-hC-cue" firstAttribute="leading" secondItem="UiH-5A-UBa" secondAttribute="leading" id="gno-fZ-U2p"/>
                             <constraint firstItem="jtF-hC-cue" firstAttribute="top" secondItem="UiH-5A-UBa" secondAttribute="top" id="hUL-cZ-klC"/>
                             <constraint firstItem="UiH-5A-UBa" firstAttribute="bottom" secondItem="jtF-hC-cue" secondAttribute="bottom" id="mAo-xL-3d0"/>
@@ -1998,14 +2044,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Dr-fm-j2w" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4700" y="-1364"/>
+            <point key="canvasLocation" x="4700" y="-1364.1679160419792"/>
         </scene>
         <!--搜尋行事曆-->
         <scene sceneID="cUC-GZ-lQO">
             <objects>
-                <viewController storyboardIdentifier="searchCalendarVC" id="AhJ-59-SbL" customClass="searchCalendarVC" customModule="projectManager_ShopOwner" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="searchCalendarVC" id="AhJ-59-SbL" customClass="searchCalendarVC" customModule="projectManager" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="D3E-II-mcL">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Okc-cg-7Lg">
@@ -2060,13 +2106,13 @@
                                         <rect key="frame" x="0.0" y="125" width="355" height="62"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="結束日期" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H2A-Kg-Avb">
-                                                <rect key="frame" x="0.0" y="5.5" width="69.5" height="52"/>
+                                                <rect key="frame" x="0.0" y="6" width="69.5" height="52"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2018年1月15日" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a5k-Yh-doB">
-                                                <rect key="frame" x="239.5" y="5.5" width="115.5" height="52"/>
+                                                <rect key="frame" x="239.5" y="6" width="115.5" height="52"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" red="0.81407335069999998" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -2086,7 +2132,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fiZ-6h-6Zo">
                                         <rect key="frame" x="0.0" y="187" width="355" height="62.5"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="搜詢客戶" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xru-Cj-rRs">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="搜詢商家" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xru-Cj-rRs">
                                                 <rect key="frame" x="0.0" y="5" width="69.5" height="52.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
@@ -2151,16 +2197,27 @@
         </scene>
     </scenes>
     <resources>
+        <image name="2-01行事曆icon(未點)" width="25" height="25"/>
+        <image name="2-02行事曆icon(已點)" width="25" height="25"/>
+        <image name="2-03訊息中心icon(未點)" width="25" height="25"/>
+        <image name="2-04訊息中心icon(已點)" width="25" height="25"/>
+        <image name="2-05我的專案icon(未點)" width="25" height="25"/>
+        <image name="2-06我的專案icon(已點)" width="25" height="25"/>
+        <image name="2-07費用管理icon(未點)" width="25" height="25"/>
+        <image name="2-08費用管理icon(已點)" width="25" height="25"/>
+        <image name="2-09其他功能icon(未點)" width="25" height="25"/>
+        <image name="2-10其他功能icon(已點)" width="25" height="25"/>
+        <image name="2-11行事曆搜詢icon" width="25" height="25"/>
+        <image name="2-12商家端搜詢icon" width="25" height="25"/>
+        <image name="2-13新增行事曆icon" width="25" height="25"/>
+        <image name="p-02_登入區(底圖)" width="1080" height="1920"/>
+        <image name="p-03_登入區(LOGO)" width="500" height="583"/>
+        <image name="p-04_註冊(底圖)" width="1080" height="1920"/>
+        <image name="p-07_行事曆時間軸呈現區(底圖)" width="1080" height="1920"/>
+        <image name="p-08_新增行事曆底圖" width="1080" height="1920"/>
         <image name="u1185" width="62" height="51"/>
-        <image name="u193" width="34" height="31"/>
-        <image name="u197" width="34" height="31"/>
-        <image name="u199" width="34" height="31"/>
-        <image name="u201" width="34" height="31"/>
-        <image name="u203" width="34" height="31"/>
         <image name="u224" width="77" height="74"/>
         <image name="u439" width="65" height="58"/>
         <image name="u643" width="65" height="66"/>
-        <image name="u691" width="22" height="22"/>
-        <image name="u693" width="22" height="22"/>
     </resources>
 </document>

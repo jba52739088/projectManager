@@ -106,12 +106,12 @@ extension UIViewController {
     }
     
     // 搜尋行事曆
-    func searchCalendarRequest(key: String, b_mid: String, from: String, end: String, _ completionHandler: @escaping ([eventModel]?) -> Void) {
+    func searchCalendarRequest(m_name: String, b_mid: String, from: String, end: String, _ completionHandler: @escaping ([eventModel]?) -> Void) {
         var allEvents: [eventModel] = []
         guard let token = appDelegate.token else { return }
         let url = "http://edu.iscom.com.tw:2039/API/api/lawyer_WebAPI/SearchCalendar/"
         let headers = ["Authorization": "Bearer \(token)"]
-        let parameters = ["m_name":key, "b_mid":b_mid, "start_date":from, "end_date":end] as [String : Any]
+        let parameters = ["m_name":m_name, "b_mid":b_mid, "start_date":from, "end_date":end] as [String : Any]
         Alamofire.request(url, method: .post, parameters: parameters, encoding: JSONEncoding.default, headers: headers)
             .responseJSON { response in
                 if let results = response.result.value as? [Dictionary<String,AnyObject>] {
@@ -214,6 +214,30 @@ extension UIViewController {
                 completionHandler(allmatchedMembers)
             }else {
                 print("matchedMemberRequest: get JSON error")
+            }
+        }
+    }
+    
+    // 取得專案選項
+    func projectOptionRequest(pcid: String, _ completionHandler: @escaping ([Dictionary<String,String>]?) -> Void) {
+        var allClasses: [Dictionary<String,String>] = []
+        guard let token = appDelegate.token else { return }
+        let url = "http://edu.iscom.com.tw:2039/API/api/lawyer_WebAPI/Project/GetProjectListbyClass/\(pcid)"
+        let headers = ["Authorization": "Bearer \(token)"]
+        Alamofire.request(url, headers: headers).responseJSON { (response) -> Void in
+            if let results = response.result.value as? [Dictionary<String,String>] {
+                for result in results {
+                    guard let P_ID = result["P_ID"] as? String,           //  ID
+                          let P_NAME = result["P_NAME"] as? String         //  類別名稱
+                        else { return }
+                    var _class: Dictionary<String,String> = [:]
+                    _class["P_ID"] = P_ID
+                    _class["P_NAME"] = P_NAME
+                    allClasses.append(_class)
+                }
+                completionHandler(allClasses)
+            }else {
+                print("projectClassRequest: get JSON error")
             }
         }
     }

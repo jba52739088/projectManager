@@ -23,10 +23,8 @@ class scheduleEditVC: UIViewController {
         super.viewDidLoad()
         
         let footView = UIView()
-        footView.backgroundColor = UIColor.lightGray
         self.tableView.tableFooterView = footView
         self.tableView.separatorStyle = .none
-        self.tableView.backgroundColor = UIColor.lightGray
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -78,7 +76,6 @@ extension scheduleEditVC: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let View = UIView()
-        View.backgroundColor = UIColor.lightGray
         return View
     }
     

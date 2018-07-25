@@ -10,10 +10,20 @@ import UIKit
 
 class tabBarController: UITabBarController {
 
+    @IBOutlet weak var _tabBar: UITabBar!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        UITabBar.appearance().backgroundImage = UIImage(named: "p-05_下方功能列(底圖)")
+        self.tabBar.autoresizesSubviews = false
+        self.tabBar.clipsToBounds = true
+        self.tabBar.isTranslucent = false
+        
+        for item in self.tabBar.items!{
+            item.selectedImage = item.selectedImage?.withRenderingMode(.alwaysOriginal)
+            item.image = item.image?.withRenderingMode(.alwaysOriginal)
+        }
     }
 
     override func didReceiveMemoryWarning() {
