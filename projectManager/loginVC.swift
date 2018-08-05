@@ -30,7 +30,9 @@ class loginVC: UIViewController {
         registerBtn.layer.masksToBounds = true
         
 //        self.accTextField.text = "shopb"
-        self.accTextField.text = "systemadmin"
+//        self.accTextField.text = "systemadmin"
+        self.accTextField.text = "test009"
+//        self.accTextField.text = "C01"
         self.pwdTextField.text = "123"
         
         if let version = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String {

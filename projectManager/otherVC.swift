@@ -21,6 +21,11 @@ class otherVC: UIViewController {
 
         self.navigationController?.navigationBar.isHidden = false
         self.navigationController?.title = "其他功能"
+        
+        self.msgBtn.imageView?.contentMode = .scaleAspectFit
+        self.scanBtn.imageView?.contentMode = .scaleAspectFit
+        self.topupBtn.imageView?.contentMode = .scaleAspectFit
+        self.willBtn.imageView?.contentMode = .scaleAspectFit
     }
 
     @IBAction func tapMessageBtn(_ sender: Any) {

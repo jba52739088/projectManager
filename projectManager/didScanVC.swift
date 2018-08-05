@@ -19,6 +19,10 @@ class didScanVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.getSelfInfoRequest { (selfName) in
+            self.title = selfName
+        }
+        
         self.headerLabel.layer.borderColor = UIColor.black.cgColor
         self.headerLabel.layer.borderWidth = 2
         

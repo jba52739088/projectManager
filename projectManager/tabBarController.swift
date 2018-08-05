@@ -8,9 +8,11 @@
 
 import UIKit
 
-class tabBarController: UITabBarController {
+class tabBarController: UITabBarController{
 
     @IBOutlet weak var _tabBar: UITabBar!
+    
+    let appDelegate = UIApplication.shared.delegate as! AppDelegate
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,20 +28,19 @@ class tabBarController: UITabBarController {
         }
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    override func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
+        if item.tag == 1 {
+            appDelegate.calendarVC?.isSearch = false
+            appDelegate.calendarVC?.isSearchShop = false
+            appDelegate.calendarVC?.searchEnd = ""
+            appDelegate.calendarVC?.searchBegin = ""
+            appDelegate.calendarVC?.searchKey = ""
+            appDelegate.calendarVC?.search_b_mid = ""
+            appDelegate.calendarVC?.selectedYear = ""
+            appDelegate.calendarVC?.selectedMonth = ""
+            appDelegate.calendarVC?.selectedDay = ""
+            appDelegate.calendarVC?.searchShopName = nil
+            appDelegate.calendarVC?.setUpDate()
+        }
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

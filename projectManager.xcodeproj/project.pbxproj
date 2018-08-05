@@ -33,6 +33,7 @@
 		FCB3471F20BC55FA000FD864 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCB3471D20BC55FA000FD864 /* Main.storyboard */; };
 		FCB3472120BC55FA000FD864 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCB3472020BC55FA000FD864 /* Assets.xcassets */; };
 		FCB3472420BC55FA000FD864 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCB3472220BC55FA000FD864 /* LaunchScreen.storyboard */; };
+		FCB8AC042116A90D0087D928 /* bookListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB8AC032116A90D0087D928 /* bookListVC.swift */; };
 		FCC90AB120BC606D00D92219 /* registerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC90AB020BC606D00D92219 /* registerVC.swift */; };
 		FCC90AB520BC642A00D92219 /* messageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC90AB420BC642A00D92219 /* messageVC.swift */; };
 		FCC90AB720BC643F00D92219 /* projectVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC90AB620BC643F00D92219 /* projectVC.swift */; };
@@ -45,6 +46,8 @@
 		FCD3837D20ED6B6300568B96 /* QRcodeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD3837C20ED6B6200568B96 /* QRcodeVC.swift */; };
 		FCD3837F20ED6C5200568B96 /* didAddVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD3837E20ED6C5200568B96 /* didAddVC.swift */; };
 		FCD3838120ED751F00568B96 /* didScanVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD3838020ED751F00568B96 /* didScanVC.swift */; };
+		FCD7F10A2108C5EB009F560B /* invitiationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD7F1092108C5EB009F560B /* invitiationVC.swift */; };
+		FCD7F10C2108C710009F560B /* invitiationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD7F10B2108C710009F560B /* invitiationCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -78,6 +81,7 @@
 		FCB3472020BC55FA000FD864 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FCB3472320BC55FA000FD864 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FCB3472520BC55FA000FD864 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCB8AC032116A90D0087D928 /* bookListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = bookListVC.swift; sourceTree = "<group>"; };
 		FCC90AB020BC606D00D92219 /* registerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = registerVC.swift; sourceTree = "<group>"; };
 		FCC90AB420BC642A00D92219 /* messageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = messageVC.swift; sourceTree = "<group>"; };
 		FCC90AB620BC643F00D92219 /* projectVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = projectVC.swift; sourceTree = "<group>"; };
@@ -90,6 +94,8 @@
 		FCD3837C20ED6B6200568B96 /* QRcodeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRcodeVC.swift; sourceTree = "<group>"; };
 		FCD3837E20ED6C5200568B96 /* didAddVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = didAddVC.swift; sourceTree = "<group>"; };
 		FCD3838020ED751F00568B96 /* didScanVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = didScanVC.swift; sourceTree = "<group>"; };
+		FCD7F1092108C5EB009F560B /* invitiationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = invitiationVC.swift; sourceTree = "<group>"; };
+		FCD7F10B2108C710009F560B /* invitiationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = invitiationCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +137,8 @@
 				FC4F137F20FC08580009D2FB /* cell */,
 				FC4F138720FC08580009D2FB /* scheduleConflictVC.swift */,
 				FC4F138820FC08580009D2FB /* scheduleDetailVC.swift */,
+				FCB8AC032116A90D0087D928 /* bookListVC.swift */,
+				FCD7F1092108C5EB009F560B /* invitiationVC.swift */,
 			);
 			name = calendar;
 			path = ../../projectManager_ShopOwner/projectManager_ShopOwner/calendar;
@@ -146,6 +154,7 @@
 				FC4F138420FC08580009D2FB /* scheduleType_1Cell.swift */,
 				FC4F138520FC08580009D2FB /* calendarCell.swift */,
 				FC4F138620FC08580009D2FB /* scheduleEditlCell.swift */,
+				FCD7F10B2108C710009F560B /* invitiationCell.swift */,
 			);
 			path = cell;
 			sourceTree = "<group>";
@@ -370,6 +379,7 @@
 				FC4F139520FC08EA0009D2FB /* scheduleTitleCell.swift in Sources */,
 				FC4F139120FC08DB0009D2FB /* searchCalendarVC.swift in Sources */,
 				FCC90AB520BC642A00D92219 /* messageVC.swift in Sources */,
+				FCD7F10A2108C5EB009F560B /* invitiationVC.swift in Sources */,
 				FCC90ABD20BCBAF200D92219 /* msgCell.swift in Sources */,
 				FCD3838120ED751F00568B96 /* didScanVC.swift in Sources */,
 				FC4F138D20FC08D00009D2FB /* projectModel.swift in Sources */,
@@ -379,6 +389,7 @@
 				FC4F138F20FC08D50009D2FB /* matchedMemberModel.swift in Sources */,
 				FC3807DB20BC5A65004B554A /* loginVC.swift in Sources */,
 				FC4F139820FC08EE0009D2FB /* calendarCollectionCell.swift in Sources */,
+				FCD7F10C2108C710009F560B /* invitiationCell.swift in Sources */,
 				FC4F139620FC08EE0009D2FB /* scheduleType_2Cell.swift in Sources */,
 				FCC90AB720BC643F00D92219 /* projectVC.swift in Sources */,
 				FC4F139020FC08D80009D2FB /* scheduleAddVC.swift in Sources */,
@@ -386,6 +397,7 @@
 				FCB3471A20BC55FA000FD864 /* AppDelegate.swift in Sources */,
 				FCC90AB920BC644E00D92219 /* feeVC.swift in Sources */,
 				FCC90AC420BCC53400D92219 /* feeCell.swift in Sources */,
+				FCB8AC042116A90D0087D928 /* bookListVC.swift in Sources */,
 				FC4F139920FC08EE0009D2FB /* scheduleType_1Cell.swift in Sources */,
 				FCC90ABB20BC645F00D92219 /* otherVC.swift in Sources */,
 				FC4F139B20FC08EE0009D2FB /* scheduleEditlCell.swift in Sources */,

@@ -25,6 +25,10 @@ class QRcodeVC: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.getSelfInfoRequest { (selfName) in
+            self.title = selfName
+        }
+        
         let captureDevice = AVCaptureDevice.default(for: AVMediaType.video)
         var input: AVCaptureDeviceInput!
         do{
