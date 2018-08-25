@@ -1653,7 +1653,7 @@
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="個人" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I0x-Xv-LKm">
                                                             <rect key="frame" x="0.0" y="44" width="90" height="43"/>
-                                                            <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <color key="backgroundColor" red="0.0" green="0.58823529411764708" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -1719,12 +1719,19 @@
                     </view>
                     <navigationItem key="navigationItem" title="1月" id="6vZ-jE-M72">
                         <barButtonItem key="backBarButtonItem" title="返回" id="4dr-OP-yLN"/>
-                        <barButtonItem key="leftBarButtonItem" title="收件匣( )" id="Twp-OI-wfw">
-                            <color key="tintColor" red="0.81568627449999997" green="0.14901960780000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <connections>
-                                <action selector="tapMessageBtn:" destination="LVE-oT-2os" id="yPR-nM-rjr"/>
-                            </connections>
-                        </barButtonItem>
+                        <leftBarButtonItems>
+                            <barButtonItem title="收件匣( )" id="Twp-OI-wfw">
+                                <color key="tintColor" red="0.81568627449999997" green="0.14901960780000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="tapMessageBtn:" destination="LVE-oT-2os" id="yPR-nM-rjr"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem image="last" style="plain" id="wBY-bK-2Ed">
+                                <connections>
+                                    <action selector="tapLastBtn:" destination="LVE-oT-2os" id="OMd-NZ-Mhi"/>
+                                </connections>
+                            </barButtonItem>
+                        </leftBarButtonItems>
                         <rightBarButtonItems>
                             <barButtonItem image="2-13新增行事曆icon" style="plain" id="tE5-dV-glr">
                                 <connections>
@@ -1741,12 +1748,19 @@
                                     <action selector="tapSearchBtn:" destination="LVE-oT-2os" id="kQe-g5-MJS"/>
                                 </connections>
                             </barButtonItem>
+                            <barButtonItem image="next" style="plain" id="RUc-Ae-RDJ">
+                                <connections>
+                                    <action selector="tapSearchBtn:" destination="LVE-oT-2os" id="G7Z-9B-VlF"/>
+                                </connections>
+                            </barButtonItem>
                         </rightBarButtonItems>
                     </navigationItem>
                     <connections>
                         <outlet property="addBtn" destination="tE5-dV-glr" id="a0J-s3-OEy"/>
                         <outlet property="collectionView" destination="wuJ-05-ETP" id="kDD-ca-VhM"/>
+                        <outlet property="lastBtn" destination="wBY-bK-2Ed" id="An1-ux-Oop"/>
                         <outlet property="messageBtn" destination="Twp-OI-wfw" id="Oiv-lK-r3G"/>
+                        <outlet property="nextBtn" destination="RUc-Ae-RDJ" id="J3Q-Y5-EII"/>
                         <outlet property="searchBtn" destination="qKE-Mf-Id4" id="Rye-Mw-P9K"/>
                         <outlet property="searchTimeBtn" destination="1tV-km-8ln" id="2Ap-Tb-Yhd"/>
                         <outlet property="tableView" destination="Mwp-El-Bp2" id="3mW-Ac-fKz"/>
@@ -2469,6 +2483,8 @@
         <image name="2-27商家掃描icon" width="512" height="512"/>
         <image name="2-28儲值icon" width="512" height="512"/>
         <image name="2-29遺囑管理icon" width="512" height="512"/>
+        <image name="last" width="25" height="25"/>
+        <image name="next" width="25" height="25"/>
         <image name="p-02_登入區(底圖)" width="1080" height="1920"/>
         <image name="p-03_登入區(LOGO)" width="500" height="583"/>
         <image name="p-04_註冊(底圖)" width="1080" height="1920"/>
