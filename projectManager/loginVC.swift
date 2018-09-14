@@ -31,9 +31,9 @@ class loginVC: UIViewController {
         
 //        self.accTextField.text = "shopb"
 //        self.accTextField.text = "systemadmin"
-        self.accTextField.text = "test009"
+//        self.accTextField.text = "test009"
 //        self.accTextField.text = "C01"
-        self.pwdTextField.text = "123"
+//        self.pwdTextField.text = "123"
         
         if let version = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String {
             self.versionLabel.text = "客戶端 - v\(version)"

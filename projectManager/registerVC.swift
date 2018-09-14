@@ -35,6 +35,7 @@ class registerVC: UIViewController {
     }
     
     @IBAction func doRegister(_ sender: Any) {
+        
         guard let account = accountTextField.text,
             let password = passwordTextField.text,
             let name = nameTextField.text,
