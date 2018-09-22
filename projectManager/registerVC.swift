@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwiftOverlays
 
 class registerVC: UIViewController {
     
@@ -46,11 +47,13 @@ class registerVC: UIViewController {
             let mail = mailTextField.text else { return }
         
         if account != "" && password != "" && name != "" {
+            SwiftOverlays.showBlockingWaitOverlay()
             self.registerRequest(account: account, password: password, name: name, ID: ID, address: address, phone: phone, cellphone: cell, mail: mail) { (isSucceed, message) in
+                SwiftOverlays.removeAllBlockingOverlays()
                 if isSucceed {
                     print("succeed")
                     //                let loginVC = self.storyboard?.instantiateViewController(withIdentifier: "loginVC") as! loginVC
-                    let alert = UIAlertController(title: "註冊成功", message: nil, preferredStyle: .alert)
+                    let alert = UIAlertController(title: "訊息", message: "註冊成功", preferredStyle: .alert)
                     let okBtn = UIAlertAction(title: "確認", style: .default, handler: { (_) in
                         self.navigationController?.popViewController(animated: true)
                     })
@@ -58,11 +61,11 @@ class registerVC: UIViewController {
                     self.presentAlert(alert, animated: true)
                 }else {
                     print(message)
-                    self.showAlert(title: "\(message)", message: nil)
+                    self.showAlert(title: "訊息", message: "\(message)")
                 }
             }
         }else {
-            self.showAlert(title: "帳號、密碼、姓名為必填欄位，請填寫完整。", message: nil)
+            self.showAlert(title: "訊息", message: "帳號、密碼、姓名為必填欄位，請填寫完整。")
         }
         
     }

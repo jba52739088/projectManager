@@ -10,5 +10,5 @@ target 'projectManager' do
 pod 'IQKeyboardManagerSwift', :inhibit_warnings => true
 pod 'Alamofire', '~> 4.5', :inhibit_warnings => true
 pod 'SwiftyJSON', :inhibit_warnings => true
-
+pod 'SwiftOverlays', '~> 4.0.0', :inhibit_warnings => true
 end
